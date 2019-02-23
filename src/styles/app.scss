@@ -1,0 +1,14 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+
+  &__container {
+      @include container;
+      padding-bottom: 50px;
+
+      @include respond-to(desktop) {
+        padding-top: 50px;
+        padding-bottom: 350px;
+      }
+  }
+}

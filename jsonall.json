@@ -1,0 +1,119 @@
+[{
+  "id": 1,
+  "author": "Uknown source",
+  "title": "the first recipe title",
+  "instructure": "1.Mix all ingredients except ghee and garnishes to marinate for about 4 hours, then grind to form a smooth, thick paste.\n 2.Knead this mixture well and mix in the roasted gram and the egg.\n 3.Cover and refrigerate for another hour.\n 4.About 25 minutes before serving, shape the meat around the skewers and place the kebabs on to a grill over a drip tray, or in a pre-heated oven (also on a drip tray).\n 5.If cooking them over a charcoal grill, you will have to keep rotating them so that they brown and cook evenly.\n 6.They should take 15-20 minutes to cook.\n 7.Brush with ghee and cook another 2 minutes.\n 8.Serve garnished with chaat masala onions and the lemon and serve with green chutney.",
+  "rating": 4.5,
+  "recipe_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/1",
+  "comments_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/1/comments",
+  "meal_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/1/meal",
+  "ingredients_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/1/ingredients",
+  "meal": {
+    "id": 1,
+    "recipe_id": 1,
+    "name": "Kakori Kebabs",
+    "description": "These Lucknowi Kebabs are nothing short of a celebration of meat.",
+    "country": "Turky",
+    "type": "salad",
+    "allergic_type": "normal",
+    "energy": 450,
+    "preparing_time": null,
+    "cooking_time": "00:50:00",
+    "image": "http://sjflskjflsjf"
+  },
+  "ingredients": [{
+    "id": 1,
+    "name": "Potato",
+    "pivot": {
+      "recipe_id": 1,
+      "ingredient_id": 1,
+      "amount": "2gr"
+    }
+  }, {
+    "id": 2,
+    "name": "Salt",
+    "pivot": {
+      "recipe_id": 1,
+      "ingredient_id": 2,
+      "amount": "1ts"
+    }
+  }],
+  "comments": [{
+    "id": 1,
+    "headline": "the first comment",
+    "body": "this is really good salads recipe",
+    "rank": 5,
+    "recipe_id": 1,
+    "user_id": 1
+  }, {
+    "id": 2,
+    "headline": "the second comment",
+    "body": "this is really awsome recpi",
+    "rank": 4,
+    "recipe_id": 1,
+    "user_id": 1
+  }]
+}, {
+  "id": 2,
+  "author": "Ica",
+  "title": null,
+  "instructure": "Sätt ugnen på 250 grader.\n Dela degen i 4 delar och forma till bollar, låt jäsa 15 minuter.\n Kavla ut varje degbit tunt och lägg över på en plåt med bakplåtspapper innan du toppar pizzan.\n Bred ut tomatsås på pizzorna och toppa med ost.\n Tillaga pizzan längst ned i ugnen tills den fått fin färg.",
+  "rating": 2.5,
+  "recipe_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/2",
+  "comments_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/2/comments",
+  "meal_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/2/meal",
+  "ingredients_link": "http://recipe-backend.ardinasiri.chas.academy/api/recipes/2/ingredients",
+  "meal": {
+    "id": 2,
+    "recipe_id": 2,
+    "name": "pizza margarita",
+    "description": "Typical Neapolitan pizza.",
+    "country": "Itay",
+    "type": "main_course",
+    "allergic_type": "vegetarian",
+    "energy": 700,
+    "preparing_time": null,
+    "cooking_time": "00:20:00",
+    "image": "http://MargaritaPizza"
+  },
+  "ingredients": [{
+    "id": 2,
+    "name": "Salt",
+    "pivot": {
+      "recipe_id": 2,
+      "ingredient_id": 2,
+      "amount": "1ts"
+    }
+  }, {
+    "id": 3,
+    "name": "Cheese",
+    "pivot": {
+      "recipe_id": 2,
+      "ingredient_id": 3,
+      "amount": "20gr"
+    }
+  }, {
+    "id": 4,
+    "name": "TomatSås",
+    "pivot": {
+      "recipe_id": 2,
+      "ingredient_id": 4,
+      "amount": "10dl"
+    }
+  }],
+  "comments": [{
+    "id": 3,
+    "headline": null,
+    "body": "this is not bad pizza recipe",
+    "rank": 3,
+    "recipe_id": 2,
+    "user_id": 2
+  }, {
+    "id": 4,
+    "headline": "the fourth comment",
+    "body": "this is bad recpi",
+    "rank": 2,
+    "recipe_id": 2,
+    "user_id": 1
+  }]
+}]

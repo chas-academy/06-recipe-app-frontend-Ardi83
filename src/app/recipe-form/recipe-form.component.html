@@ -1,0 +1,288 @@
+<form #f="ngForm">
+ 
+    <!-- ---- recipe author -->
+    <div class="form-group">
+      <label for="author">Recipe author</label>
+      <input required [(ngModel)]="recipe.author" name="author" 
+        #author="ngModel" 
+        id="author" type="text" class="form-control">
+      <div class="alert alert-danger" 
+        *ngIf="author.touched && !author.valid">
+        Recipe author is required
+      </div>
+    </div>
+    <!-- ----- recipe title -->
+    <div class="form-group">
+      <label for="title">Recipe title</label>
+      <input required [(ngModel)]="recipe.title" name="title" 
+        #title="ngModel" 
+        id="title" type="text" class="form-control">
+      <div class="alert alert-danger" 
+        *ngIf="title.touched && !title.valid">
+        Recipe title is required
+      </div>
+    </div>
+    <!-- ----- recipe instructure -->
+    <div class="form-group">
+      <label for="instructure">Recipe instructure</label>
+      <input required [(ngModel)]="recipe.instructure" name="instructure" 
+        #instructure="ngModel" 
+        id="instructure" type="text" class="form-control">
+      <div class="alert alert-danger" 
+        *ngIf="instructure.touched && !instructure.valid">
+        Recipe instructure is required
+      </div>
+    </div>
+  
+    <div *ngIf="!recipe.id">
+      <!-- ---- meal name -->
+    <div class="form-group">
+        <label for="name">Meal Name</label>
+        <input required [(ngModel)]="recipe.name" name="name" 
+          #name="ngModel" 
+          id="name" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="name.touched && !name.valid">
+          Meal Name is required
+        </div>
+      </div>
+      <!-- ----- meal description -->
+      <div class="form-group">
+        <label for="description">Meal description</label>
+        <input required [(ngModel)]="recipe.description" name="description" 
+          #description="ngModel" 
+          id="description" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="description.touched && !description.valid">
+          Meal description is required
+      </div>
+      </div>
+      <!-- ----- meal country -->
+      <div class="form-group">
+        <label for="country">Meal country</label>
+        <input required [(ngModel)]="recipe.country" name="country" 
+          #country="ngModel" 
+          id="country" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="country.touched && !country.valid">
+          Meal country is required
+        </div>
+      </div>
+      <!-- ----- meal energy -->
+      <div class="form-group">
+        <label for="energy">Meal energy</label>
+        <input required [(ngModel)]="recipe.energy" name="energy" 
+          #energy="ngModel" 
+          id="energy" type="number" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="energy.touched && !energy.valid">
+          Meal energy is required
+        </div>
+      </div>
+      <!-- ----- meal preparation time -->
+      <div class="form-group">
+        <label for="preparing_time">Meal preparing_time</label>
+        <input required [(ngModel)]="recipe.preparing_time" name="preparing_time" 
+        #preparing_time="ngModel" 
+          id="preparing_time" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="preparing_time.touched && !preparing_time.valid">
+          Meal preparing_time is required
+        </div>
+      </div>
+      <!-- ---- meal cooking time -->
+      <div class="form-group">
+        <label for="cooking_time">Meal cooking_time</label>
+        <input required [(ngModel)]="recipe.cooking_time" name="cooking_time" 
+          #cooking_time="ngModel" 
+          id="cooking_time" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="cooking_time.touched && !cooking_time.valid">
+          Meal cooking_time is required
+        </div>
+      </div>
+      <!-- ---- meal image -->
+      <div class="form-group">
+        <label for="image">Meal image</label>
+        <input required [(ngModel)]="recipe.image" name="image" 
+        #image="ngModel" 
+        id="image" type="text" class="form-control" url>
+        <div class="alert alert-danger" 
+        *ngIf="(image.touched && !image.valid) || image.errors?.url">
+          Meal image is required and should be a valid url
+        </div>
+      </div>
+      <div class="row">
+        <!-- ------ meal allergic_type -->
+        <div class="radio col-md-6">
+          <h5>Choose allergic type</h5>
+          <div *ngFor="let allergic of allergic_type">
+            <label>
+              <input required [(ngModel)]="recipe.allergic_type" name="allergic_type" type="radio" [value]="allergic.name">
+              {{ allergic.name }}
+            </label>
+          </div>
+        </div>
+        <!-- ----- meal type -->
+        <div class="radio col-md-6">
+          <h5>Choose meal type</h5>
+          <div *ngFor="let typ of type" >
+            <label>
+            <input required [(ngModel)]="recipe.type" type="radio" name="type" [value]="typ.name">
+             {{ typ.name }}
+           </label>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div *ngIf="recipe.id">
+      <!-- ---- meal name -->
+    <div class="form-group">
+        <label for="name">Meal Name</label>
+        <input required [(ngModel)]="recipe.meal.name" name="name" 
+          #name="ngModel" 
+          id="name" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="name.touched && !name.valid">
+          Meal Name is required
+        </div>
+      </div>
+      <!-- ----- meal description -->
+      <div class="form-group">
+        <label for="description">Meal description</label>
+        <input required [(ngModel)]="recipe.meal.description" name="description" 
+          #description="ngModel" 
+          id="description" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="description.touched && !description.valid">
+          Meal description is required
+      </div>
+      </div>
+      <!-- ----- meal country -->
+      <div class="form-group">
+        <label for="country">Meal country</label>
+        <input required [(ngModel)]="recipe.meal.country" name="country" 
+          #country="ngModel" 
+          id="country" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="country.touched && !country.valid">
+          Meal country is required
+        </div>
+      </div>
+      <!-- ----- meal energy -->
+      <div class="form-group">
+        <label for="energy">Meal energy</label>
+        <input required [(ngModel)]="recipe.meal.energy" name="energy" 
+          #energy="ngModel" 
+          id="energy" type="number" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="energy.touched && !energy.valid">
+          Meal energy is required
+        </div>
+      </div>
+      <!-- ----- meal preparation time -->
+      <div class="form-group">
+        <label for="preparing_time">Meal preparing_time</label>
+        <input required [(ngModel)]="recipe.meal.preparing_time" name="preparing_time" 
+        #preparing_time="ngModel" 
+          id="preparing_time" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="preparing_time.touched && !preparing_time.valid">
+          Meal preparing_time is required
+        </div>
+      </div>
+      <!-- ---- meal cooking time -->
+      <div class="form-group">
+        <label for="cooking_time">Meal cooking_time</label>
+        <input required [(ngModel)]="recipe.meal.cooking_time" name="cooking_time" 
+          #cooking_time="ngModel" 
+          id="cooking_time" type="text" class="form-control">
+        <div class="alert alert-danger" 
+          *ngIf="cooking_time.touched && !cooking_time.valid">
+          Meal cooking_time is required
+        </div>
+      </div>
+      <!-- ---- meal image -->
+      <div class="form-group">
+        <label for="image">Meal image</label>
+        <input required [(ngModel)]="recipe.meal.image" name="image" 
+        #image="ngModel" 
+        id="image" type="text" class="form-control" url>
+        <div class="alert alert-danger" 
+        *ngIf="(image.touched && !image.valid) || image.errors?.url">
+          Meal image is required and should be a valid url
+        </div>
+      </div>
+      <div class="row">
+        <!-- ------ meal allergic_type -->
+        <div class="radio col-md-6">
+          <h5>Choose allergic type</h5>
+          <div *ngFor="let allergic of allergic_type">
+            <label>
+              <input required [(ngModel)]="recipe.meal.allergic_type" name="allergic_type" type="radio" [value]="allergic.name">
+              {{ allergic.name }}
+            </label>
+          </div>
+        </div>
+        <!-- ----- meal type -->
+        <div class="radio col-md-6">
+          <h5>Choose meal type</h5>
+          <div *ngFor="let typ of type" >
+            <label>
+            <input required [(ngModel)]="recipe.meal.type" type="radio" name="type" [value]="typ.name">
+             {{ typ.name }}
+           </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="ingredients" *ngIf="!recipe.id">
+    <table>
+      <thead>
+        <th>Ingredient Name</th>
+        <td>Ingredient Amount</td>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of recipe.ingredients">
+          <th>{{ item.name }}</th>
+          <td>{{ item.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ingredients" *ngIf="recipe.id">
+    <table>
+      <thead>
+        <th>Ingredient Name</th>
+        <td>Ingredient Amount</td>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of recipe.ingredients">
+          <th>{{ item.name }}</th>
+          <td>{{ item.pivot.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <form #fi="ngForm">
+    <div class="form-group">
+      <label>Ingredient Name</label>
+      <input required ngModel name="name" 
+      #name="ngModel"
+      type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>ingredient Amount</label>
+      <input required ngModel name="amount" 
+      #amount="ngModel" 
+      type="text" class="form-control">
+    </div>
+    <button type="button" [disabled]="!fi.valid" (click)="addIngredient(fi.value)">Add Ingredient</button>
+  </form>
+  <button *ngIf="!recipe.id" type="submit" (click)="onSubmit()" class="btn btn-primary">Save Recipe</button>
+  <button *ngIf="recipe.id" type="submit" (click)="onSubmit()" class="btn btn-primary">Update Recipe</button>
+</form>
+
+<a routerLink="/recipe">Return to Recipes list</a>

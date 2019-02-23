@@ -1,0 +1,62 @@
+@import '../../styles.scss';
+
+.footer {
+    background-color: $dark-blue;
+    color: $dark-white;
+    width: 100%;
+  
+    @include respond-to(desktop) {
+      position: absolute;
+      bottom: 0;
+      min-height: 250px;
+    }
+    
+    &__up {
+        @include divider;
+
+        &_box {
+            padding: $spacing;
+            margin-top: $spacing-medium;
+            border-radius: $radius;
+            text-align: center;
+
+            & h4::after {
+                content: '';
+                display: block;
+                margin: auto;
+                width: 0;
+                height: 2px;
+                background: $dark-white;
+                transition: width .5s;
+            }
+            
+            & h4:hover::after {
+                width: 60%;
+            }
+
+            & li {
+                line-height: $spacing-large;
+              }
+
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        padding: $spacing $spacing-medium;
+        
+        &_icon {
+            
+            & i {
+                padding: $spacing $spacing-medium;
+            }
+        }
+    }
+    
+    
+        
+}

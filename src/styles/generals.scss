@@ -1,0 +1,45 @@
+.row {
+  width: 100%;
+  padding-left: $spacing;
+  padding-right: $spacing;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+  @include respond-to(tablet) {
+    padding-left: $spacing-medium;
+    padding-right: $spacing-medium;
+  }
+
+  @include respond-to(desktop) {
+    padding-left: $spacing-large;
+    padding-right: $spacing-large;
+  }
+}
+
+.modal-content {
+  background-color: var(--background);
+}
+
+.card {
+  background: $white;
+  color: $black;
+  margin: $spacing;
+  padding: 0;
+  min-height: 420px;
+
+  & img {
+    height: 170px;
+  }
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.sticky-top {
+  top: $spacing-large;
+}
