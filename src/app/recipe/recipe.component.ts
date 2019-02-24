@@ -10,16 +10,40 @@ import { RecipeService } from '../services/recipe.service';
 })
 export class RecipeComponent {
   recipes$: Recipe[];
-  filterRecipes: any[];
+  links: any;
+  categories = ['starter', 'snack', 'main_course', 'dessert', 'salad', 'sauce'];
   
   constructor(private recipeservice: RecipeService, private router: Router) {
     this.getRecipes();
   }
   
-  getRecipes() {
-    this.recipeservice.getRecipes()
-    .subscribe(response => {
-      this.recipes$ = response.data;
+  getRecipes(category?: string) {
+    if (category) {
+      this.recipeservice.getRecipes()
+        .subscribe((response: any) => {
+          this.recipes$ = response.data.filter((x:any) => x.meal.type === category);  
+          this.links = response.links; 
+        });
+    } else {
+      this.recipeservice.getRecipes()
+        .subscribe((response: any) => {
+          this.recipes$ = response.data;  
+          this.links = response.links; 
+        });
+    }
+  }
+  getRecipesPrev(link) {
+    this.recipeservice.getRecipesPrev(link)
+    .subscribe((response: any) => {
+      this.recipes$ = response.data;  
+      this.links = response.links;  
+    });
+  }
+  getRecipesNext(link) {
+    this.recipeservice.getRecipesNext(link)
+    .subscribe((response: any) => {
+      this.recipes$ = response.data;  
+      this.links = response.links;  
     });
   }
 
@@ -35,22 +59,12 @@ export class RecipeComponent {
     }
   }
 
-  //    getRecipes() {
-  //      this._http.get<Recipe[]>(this.apiUrl);
-  //   }
-  //   addComment(id) {
-  //     console.log(id);
-      
-  //   }
+  view(id){
+    this.router.navigate(['recipe/view/' + id]);
+  }
+
+  filterBy(category) {
+    this.getRecipes(category);
+  }
     
-  //   filterBy(en) {
-  //     this._http.get(this.apiUrl)
-  //     .subscribe(response => {
-  //       this.filterRecipes = response.filter(x => x.meal.energy === en);
-  //     })  
-  // }
-
-  // //  post Http
-
-  
 }

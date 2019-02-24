@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { RecipeFormComponent } from './recipe-form/recipe-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
+import { RecipeViewDetailsComponent } from './recipe-view-details/recipe-view-details.component';
 
 import { RecipeService } from './services/recipe.service';
 
@@ -25,6 +26,7 @@ import { RecipeService } from './services/recipe.service';
     FooterComponent,
     RecipeFormComponent,
     SignupFormComponent,
+    RecipeViewDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -26,6 +26,12 @@ export class RecipeService {
   getRecipes(): Observable<GetRecipes> {
     return this.httpClient.get(this.apiUrl) as Observable<GetRecipes>
   }
+  getRecipesPrev(prevApi): Observable<GetRecipes> {
+    return this.httpClient.get(prevApi) as Observable<GetRecipes>
+  }
+  getRecipesNext(nextApi): Observable<GetRecipes> {
+    return this.httpClient.get(nextApi) as Observable<GetRecipes>
+  }
   
   getRecipe(id): Observable<GetRecipe> {
     return this.httpClient.get(this.apiUrl + '/' + id) as Observable<GetRecipe>

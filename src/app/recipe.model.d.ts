@@ -11,7 +11,9 @@ interface Recipe {
     preparing_time: string,
     cooking_time: string,
     image: string,
-    ingredients: Ingredient[]
+    ingredients: Ingredient[],
+    rating: number,
+    comments: Comment[]
 }
 
 interface GetRecipes {
@@ -25,4 +27,24 @@ interface GetRecipe {
 interface Ingredient {
     name: string,
     amount: string
+}
+
+interface Comment {
+    headline: string,
+    body: string,
+    rank: number
+}
+
+interface Pages {
+    current_page: number,
+    from: number,
+    last_page: number,
+    path: string,
+    per_page: number,
+    to: number,
+    total: number
+}
+
+interface GetPages {
+    meta: Pages[]
 }

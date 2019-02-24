@@ -1,3 +1,4 @@
+import { RecipeViewDetailsComponent } from './recipe-view-details/recipe-view-details.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -7,6 +8,7 @@ const routes: Routes = [
   { path: 'recipe', component: RecipeComponent, pathMatch: 'full'},   
   { path: 'recipe/new/:id', component: RecipeFormComponent},   
   { path: 'recipe/new', component: RecipeFormComponent},   
+  { path: 'recipe/view/:id', component: RecipeViewDetailsComponent},   
 ];
 
 @NgModule({

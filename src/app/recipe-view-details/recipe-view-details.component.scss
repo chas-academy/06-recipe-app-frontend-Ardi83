@@ -1,0 +1,70 @@
+@import '../../styles.scss';
+
+.container {
+    height: 100%;
+    background-color: $light-blue;
+
+    
+    &__upp {
+        height: inherit;
+        
+    
+    &__image {
+        float: left;
+        height: 300px;
+        padding: $spacing-medium;
+    }
+    
+    
+    &__details{
+        height: 300px;
+            color: $dark-blue;
+            padding: $spacing-medium;           
+        }
+        
+    }
+
+    &__bottom {
+        padding: $spacing-medium;
+        padding-top: 20px;
+
+        &__comment {
+            float: right;
+            position: relative;
+            bottom: $spacing-large;
+            margin-bottom: $spacing;
+        }
+    }
+}
+.modal-content {
+    background-color: $light-blue;
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+        
+        &__upp {
+            display: flex;
+            flex-flow: column;
+            padding-bottom: $spacing;            
+        
+        &__image {
+            padding: $spacing;
+
+        }
+
+        &__details{
+                padding: $spacing;              
+            }
+        
+        }
+        
+        &__bottom {
+            padding: $spacing;
+            // padding-top: 20px;
+        }
+    }
+
+}

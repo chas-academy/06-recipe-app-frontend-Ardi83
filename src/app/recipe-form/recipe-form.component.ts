@@ -24,7 +24,9 @@ export class RecipeFormComponent {
       preparing_time: '',
       cooking_time: '',
       image: '',
-      ingredients: []
+      ingredients: [],
+      rating: 0,
+      comments: []
   };
 
   constructor(private recipeService: RecipeService, private activatedRoute: ActivatedRoute) {

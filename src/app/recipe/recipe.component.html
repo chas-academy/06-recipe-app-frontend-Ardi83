@@ -1,68 +1,41 @@
 
-<select name="energy" id="" (change)="filterBy($event.target.value)">
-    <option value=""><em>choose one</em></option>
-    <option *ngFor="let e of recipes$" [value]="e.meal.energy">{{e.meal.energy}}</option>
+<select name="category" id="" (change)="filterBy($event.target.value)">
+  <option value=""><em>choose category...</em></option>
+  <option *ngFor="let c of categories" [value]="c">{{c}}</option>
 </select>
 
 <table class="table">
     <thead>
-        <th>id</th>
-        <th>Picture</th>
-        <th>author</th>
-        <th>ingredients</th>
-        <th>meal</th>
+        <th></th>
+        <th>Author</th>
+        <th>Meal</th>
+        <th>Allergic type</th>
+        <th>Category</th>
+        <th>Rank</th>
+        <th></th>
+        <th></th>
     </thead>
     <tbody>
-        <tr *ngFor="let recipe of recipes$">
-            <td>{{ recipe.id }} </td>
-            <td *ngIf="recipe.meal.image"><img width="100px" src="{{ recipe.meal.image }}"></td>
-            <td>{{ recipe.author}}</td>
-            <td>
-                <tr *ngFor="let item of recipe.ingredients">
-                    <td>{{item.name}}</td>
-                    <td>{{item.pivot.amount}}</td>
-                </tr>
-            </td>
-            <td>{{recipe.meal.name}}</td>
-                  
-            
-            <td>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                  Comments
-                </button>
-                <button type="button" class="btn btn-info" (click)="edit(recipe.id)">
-                  Edit
-                </button>
-                <button type="button" class="btn btn-warning" (click)="delete(recipe.id)">
-                  Delete
-                </button>
-            </td>
-            <td>
-                <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <tr *ngFor="let c of recipe.comments">
-                            <td>{{c.headline}}</td>
-                        </tr>
-                      </div>
-                      <div class="modal-footer">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </td>
-            <!-- Modal -->
-        </tr>
-              
+      <tr *ngFor="let recipe of recipes$">
+        <td *ngIf="recipe.meal.image" ><img style="cursor: pointer;" width="100px" src="{{ recipe.meal.image }}" (click)="view(recipe.id)"/></td>
+        <td>{{ recipe.author}}</td>           
+        <td>{{recipe.meal.name}}</td>                 
+        <td>{{recipe.meal.allergic_type}}</td>                 
+        <td>{{recipe.meal.type}}</td>
+        <td>{{ recipe.rating }}</td>
+        <td style="display: flex">
+          <button type="button" class="btn btn-info" (click)="edit(recipe.id)">
+            Edit
+          </button>
+          <button type="button" class="btn btn-warning" (click)="delete(recipe.id)">
+            Delete
+          </button>
+        </td>
+      </tr>              
     </tbody>
 </table>
 
+<button (click)="getRecipesPrev(links.prev)">Prev</button>
+<button (click)="getRecipesNext(links.next)">Next</button>
 
-<a routerLink="/recipe/new">add</a>
+<a class="btn btn-primary" routerLink="/recipe/new">add</a>

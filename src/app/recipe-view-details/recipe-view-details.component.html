@@ -1,0 +1,79 @@
+
+<a routerLink="/recipe">Back to Home</a>
+<div class="container">
+  <div class="container__upp">
+
+    <div *ngIf="recipe.id" class="container__upp__image">
+      <img src="{{ recipe.meal.image }}" width="300px"/>
+    </div>
+
+    <div class=" container__upp__details">
+      <div>
+        <h4 *ngIf="recipe.id">The {{ recipe.meal.name }} recipe</h4>
+        <h4 *ngIf="recipe.id">Allergic : {{recipe.meal.allergic_type}} <br/> Category : {{recipe.meal.type}}</h4>
+      </div>
+      <div *ngIf="recipe.author !== null">Author : {{ recipe.author }}</div>
+      <div *ngIf="recipe.id && recipe.meal.description !== null">Description : {{ recipe.meal.description }}</div>
+      <div *ngIf="recipe.id && recipe.meal.country !== null">Country : {{ recipe.meal.country }}</div>
+      <div *ngIf="recipe.id && recipe.meal.energy !== 0">Meal energy : {{ recipe.meal.energy }}</div>
+      <div>Rating : {{ recipe.rating }}</div>
+      <div *ngIf="recipe.id && recipe.meal.cooking_time !== null">Cooking time : {{ recipe.meal.cooking_time }}</div>
+      <div *ngIf="recipe.id && recipe.meal.preparing_time !== null">Preparing time : {{ recipe.meal.preparing_time }}</div>
+    </div>
+
+      <div class="container__bottom">    
+        <div>Instructure : {{ recipe.instructure }}</div>
+        <table *ngIf="recipe.id">
+          <thead>
+            <th>Name</th>
+            <th>Amount</th>
+          </thead>
+            <tbody>
+              <tr *ngFor="let item of recipe.ingredients">
+                <td>{{ item.name }}</td>
+                <td>{{ item.pivot.amount }}</td>
+              </tr>
+            </tbody>
+        </table>
+        <button type="button" class="container__bottom__comment btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+          Comments
+        </button>
+      </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Comments</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- <div class="modal-body"> -->
+        <table class="table modal-body">
+          <thead>
+            <th>Id</th>
+            <th>Headline</th>
+            <th>Body</th>
+            <th>Rank</th>
+          </thead>
+            <tbody>
+              <tr *ngFor="let comment of recipe.comments">
+                <td>{{ comment.id }}</td>
+                <td>{{ comment.headline }}</td>
+                <td>{{ comment.body }}</td>
+                <td>{{ comment.rank }}</td>
+              </tr>
+            </tbody>
+        </table>
+      <!-- </div> -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
