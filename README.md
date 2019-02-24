@@ -1,5 +1,15 @@
 Here is the Link : http://ardinasiri.chas.academy/
 
+when you choose a recipe you can update or delete that, also it possible to
+see all the comments for each recipe.
+i implemented a live random view at the home page.
+i also tried to server side rendering and just get 15 recipes for every request 
+because of performance in the client side (its no need for user to wait long time to render all the recipes at the first time, every time user get just 15 recipes).
+i implemented also filtering by recipe type through the dropdown menu for 
+showing the filtered recipes.
+i tried to use the newest methods in angular for example i used new RxJS and Observables.
+i used SASS syntax for my styling also (tried to follow BEM principles).
+
 # RecipeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
