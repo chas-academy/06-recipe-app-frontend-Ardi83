@@ -17,7 +17,8 @@ interface Recipe {
 }
 
 interface GetRecipes {
-    data: Recipe[]
+    data: Recipe[],
+    links: Links
 }
 
 interface GetRecipe {
@@ -47,4 +48,9 @@ interface Pages {
 
 interface GetPages {
     meta: Pages[]
+}
+
+interface Links {
+    prev: string,
+    next: string
 }

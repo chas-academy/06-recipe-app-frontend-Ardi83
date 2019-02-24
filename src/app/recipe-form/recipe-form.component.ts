@@ -34,8 +34,6 @@ export class RecipeFormComponent {
       this.id = +param['id'] || null;
       if (this.id) {
         this.recipeService.getRecipe(this.id).subscribe((x: any) => {
-          console.log(x);
-          
           this.recipe = x;
         });
       }

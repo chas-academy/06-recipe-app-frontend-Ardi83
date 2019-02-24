@@ -34,8 +34,9 @@
       </tr>              
     </tbody>
 </table>
-
-<button (click)="getRecipesPrev(links.prev)">Prev</button>
-<button (click)="getRecipesNext(links.next)">Next</button>
-
 <a class="btn btn-primary" routerLink="/recipe/new">add</a>
+
+<div class="row">
+  <button (click)="getRecipesPrev(links.prev)" *ngIf="links.prev">Prev</button>&nbsp;
+  &nbsp;<button (click)="getRecipesNext(links.next)" *ngIf="links.next">Next</button>
+</div>
