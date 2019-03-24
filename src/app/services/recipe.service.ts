@@ -1,60 +1,63 @@
-import { Injectable } from '@angular/core';
-import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
+import { Injectable } from "@angular/core";
+import { HttpHeaders, HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs";
+import { Router } from "@angular/router";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class RecipeService {
-
-  private apiUrl: string = 'http://recipe-backend.ardinasiri.chas.academy/api/recipes';
+  private apiUrl: string = "http://backendrecip.ardinasiri.me/api/recipes";
   httpOptions = {
     headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-    // 'Authorization': 'Bearer ' + this.getToken()
-      })
-    };
-    
+      "Content-Type": "application/json"
+    })
+  };
 
   constructor(private httpClient: HttpClient, private router: Router) {}
 
   getToken(): string {
-    return "asd"
+    return "asd";
   }
 
   getRecipes(): Observable<GetRecipes> {
-    return this.httpClient.get(this.apiUrl) as Observable<GetRecipes>
+    return this.httpClient.get(this.apiUrl) as Observable<GetRecipes>;
   }
   getRecipesPrev(prevApi): Observable<GetRecipes> {
-    return this.httpClient.get(prevApi) as Observable<GetRecipes>
+    return this.httpClient.get(prevApi) as Observable<GetRecipes>;
   }
   getRecipesNext(nextApi): Observable<GetRecipes> {
-    return this.httpClient.get(nextApi) as Observable<GetRecipes>
-  }
-  
-  getRecipe(id): Observable<GetRecipe> {
-    return this.httpClient.get(this.apiUrl + '/' + id) as Observable<GetRecipe>
-  }
-  
-  deleteById(id) {
-    return this.httpClient.delete(this.apiUrl + '/' + id);
+    return this.httpClient.get(nextApi) as Observable<GetRecipes>;
   }
 
+  getRecipe(id): Observable<GetRecipe> {
+    return this.httpClient.get(this.apiUrl + "/" + id) as Observable<GetRecipe>;
+  }
+
+  deleteById(id) {
+    return this.httpClient.delete(this.apiUrl + "/" + id);
+  }
 
   createRecipe(recipe: Recipe) {
     let ings = recipe.ingredients;
     let recipeWithoutIngredients = recipe;
     delete recipeWithoutIngredients.ingredients;
 
-    this.httpClient.post(this.apiUrl, recipeWithoutIngredients, this.httpOptions).subscribe((x: any) => {
-      this.httpClient.post(this.apiUrl + '/' + x.data.id + '/ingredients', ings, this.httpOptions)
-        .subscribe(() => {
-          this.router.navigate(['recipe']);
-        });
-    })
+    this.httpClient
+      .post(this.apiUrl, recipeWithoutIngredients, this.httpOptions)
+      .subscribe((x: any) => {
+        this.httpClient
+          .post(
+            this.apiUrl + "/" + x.data.id + "/ingredients",
+            ings,
+            this.httpOptions
+          )
+          .subscribe(() => {
+            this.router.navigate(["recipe"]);
+          });
+      });
   }
-  
+
   updateRecipe(id, recipe: any) {
     // let ings = recipe.ingredients;
     let recipeWithoutIngredients = recipe;
@@ -69,13 +72,10 @@ export class RecipeService {
     recipeWithoutIngredients.allergic_type = recipe.meal.allergic_type;
     recipeWithoutIngredients.type = recipe.meal.type;
 
-    this.httpClient.put(this.apiUrl + '/' + id, recipeWithoutIngredients, this.httpOptions).subscribe((x: any) => {
-      // this.httpClient.put(this.apiUrl + '/' + x.data.id + '/ingredients', ings, this.httpOptions)
-      //   .subscribe(() => {
-      //     this.router.navigate(['recipe']);
-      //   });
-      this.router.navigate(['/recipe']);
-    })
+    this.httpClient
+      .put(this.apiUrl + "/" + id, recipeWithoutIngredients, this.httpOptions)
+      .subscribe((x: any) => {
+        this.router.navigate(["/recipe"]);
+      });
   }
-  
 }

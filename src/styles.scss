@@ -13,3 +13,15 @@
 @import "styles/app";
 @import "styles/fonts";
 @import "styles/generals";
+
+.form-control.ng-touched.ng-invalid {
+  border-left: 5px solid red;
+}
+
+.form-control.ng-touched.ng-valid {
+  border-left: 5px solid green;
+}
+
+.btn-primary:disabled {
+  background-color: gray;
+}

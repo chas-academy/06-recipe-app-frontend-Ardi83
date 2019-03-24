@@ -3,7 +3,6 @@
   <option value=""><em>choose category...</em></option>
   <option *ngFor="let c of categories" [value]="c">{{c}}</option>
 </select>
-
 <table class="table">
     <thead>
         <th></th>
@@ -24,17 +23,17 @@
         <td>{{recipe.meal.type}}</td>
         <td>{{ recipe.rating }}</td>
         <td style="display: flex">
-          <button type="button" class="btn btn-info" (click)="edit(recipe.id)">
+          <button type="button" class="btn btn-info" (click)="edit(recipe.id)" *ngIf="loggedIn">
             Edit
           </button>
-          <button type="button" class="btn btn-warning" (click)="delete(recipe.id)">
+          <button type="button" class="btn btn-warning" (click)="delete(recipe.id)" *ngIf="loggedIn">
             Delete
           </button>
         </td>
       </tr>              
     </tbody>
 </table>
-<a class="btn btn-primary" routerLink="/recipe/new">add</a>
+<a class="btn btn-primary" routerLink="/recipe/new" *ngIf="loggedIn">add</a>
 
 <div class="row">
   <button (click)="getRecipesPrev(links.prev)" *ngIf="links.prev">Prev</button>&nbsp;
