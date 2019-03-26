@@ -7,7 +7,7 @@ import { AuthService } from '../services/auth.service';
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.css"]
+  styleUrls: ["./login.component.scss"]
 })
 export class LoginComponent implements OnInit {
   public form = {
@@ -15,7 +15,8 @@ export class LoginComponent implements OnInit {
     password: null
   };
 
-  public erro = null;
+  public error = null;
+  public user = [];
 
   constructor(
     private authJwt: AuthJwtService,
@@ -23,24 +24,26 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private Auth: AuthService
     ) {}
-
-  onSubmit() {
-    this.authJwt
-      .login(this.form).subscribe(
+    
+    onSubmitLogin() {
+      this.authJwt.login(this.form).subscribe(
         data => this.handleResponse(data),
-       errorr => this.handleError(errorr)
-       );
-  }
-
-  handleResponse(data) {
-    this.Token.handle(data.access_token);
-    this.Auth.changeAuthStatus(true);
-    this.router.navigateByUrl('/profile');
-  }
-
-  handleError(err) {
-    this.erro = err.error.error;
-  }
-
-  ngOnInit() {}
-}
+        errorr => this.handleError(errorr)
+        );
+      }
+      
+      
+      handleResponse(data) {
+        this.Token.handle(data.access_token);
+        this.Auth.changeAuthStatus(true);
+        this.router.navigateByUrl('');
+      }
+      
+      handleError(err) {
+        this.error = err.error.error;
+      }
+      
+      ngOnInit() {
+      }
+    }
+    

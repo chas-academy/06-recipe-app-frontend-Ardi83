@@ -1,8 +1,13 @@
 
-<select name="category" id="" (change)="filterBy($event.target.value)">
+<select class="mb-3" name="category" id="" (change)="filterBy($event.target.value)">
   <option value=""><em>choose category...</em></option>
   <option *ngFor="let c of categories" [value]="c">{{c}}</option>
 </select>
+<div class="row">
+  <div class="input-group mb-3 searchField">
+    <input type="text" class="form-control form-control-lg" (keyup)="searchMeal($event)" placeholder="Search for meal..." aria-label="search" aria-describedby="basic-addon1">
+  </div>
+</div>
 <table class="table">
     <thead>
         <th></th>
@@ -23,17 +28,17 @@
         <td>{{recipe.meal.type}}</td>
         <td>{{ recipe.rating }}</td>
         <td style="display: flex">
-          <button type="button" class="btn btn-info" (click)="edit(recipe.id)" *ngIf="loggedIn">
+          <button type="button" class="btn btn-warning" [disabled]="!loggedIn" (click)="edit(recipe.id)" >
             Edit
           </button>
-          <button type="button" class="btn btn-warning" (click)="delete(recipe.id)" *ngIf="loggedIn">
+          <button type="button" class="btn btn-danger" [disabled]="!loggedIn" (click)="delete(recipe.id)" >
             Delete
           </button>
         </td>
       </tr>              
     </tbody>
 </table>
-<a class="btn btn-primary" routerLink="/recipe/new" *ngIf="loggedIn">add</a>
+<a class="btn btn-primary" routerLink="/recipe/new" [class.disabled]="!loggedIn" >add</a>
 
 <div class="row">
   <button (click)="getRecipesPrev(links.prev)" *ngIf="links.prev">Prev</button>&nbsp;

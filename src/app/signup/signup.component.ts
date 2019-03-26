@@ -16,16 +16,16 @@ export class SignupComponent implements OnInit {
     password_confirmation: null
   };
 
-  public erro = [];
+  public error = [];
 
   constructor(
-    private auth: AuthJwtService,
+    private authJwt: AuthJwtService,
     private Token: TokenService,
     private router: Router
     ) {}
 
-  onSubmit() {
-    this.auth.signup(this.form).subscribe(
+    onSubmitSignup() {
+    this.authJwt.signup(this.form).subscribe(
       data => this.handleResponse(data),
       errorr => this.handleError(errorr)
       );
@@ -33,11 +33,11 @@ export class SignupComponent implements OnInit {
 
   handleResponse(data) {
     this.Token.handle(data.access_token);
-    this.router.navigateByUrl('/profile');
+    this.router.navigateByUrl('/login');
   }
 
   handleError(err) {
-    this.erro = err.error.errors;
+    this.error = err.error.errors;
   }
 
   ngOnInit() {}

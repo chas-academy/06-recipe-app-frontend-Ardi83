@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   public loggedIn: boolean;
-
+  public user: null;
 
   constructor(
     private Auth: AuthService,
@@ -19,14 +19,14 @@ export class NavbarComponent implements OnInit {
     private Token: TokenService
   ) {}
   ngOnInit() {
-    this.Auth.authstatus.subscribe( value => this.loggedIn = value);
+    this.Auth.authStatus.subscribe( value => this.loggedIn = value);
   }
-
 
   logout(event: MouseEvent) {
     event.preventDefault();
     this.Auth.changeAuthStatus(false);
-    this.router.navigateByUrl('/login');
+    this.router.navigateByUrl('');
     this.Token.remove();
   }
+
 }

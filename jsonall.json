@@ -1,1551 +1,198 @@
 {
   "data": [{
+    "id": 57,
+    "recipe_id": 81,
+    "name": "Kotlett med rostad potatis och piemento de padrons",
+    "description": "En saftig kotlett ihop med rostad potatis och sm\u00e5 pimientos st\u00e5r p\u00e5 kv\u00e4llens meny! En s\u00e5dan h\u00e4r r\u00e4tt beh\u00f6ver inte s\u00e4ljas in mer, men f\u00f6r att toppa s\u00e5 serveras middagen ihop med en sm\u00e5het chilimajonn\u00e4s. Smaklig m\u00e5ltid!",
+    "country": null,
+    "type": "main_course",
+    "allergic_type": "normal",
+    "energy": 3157,
+    "preparing_time": null,
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_162991\/cf_259\/kotlett-med-pimiento-de-padrons-och-rostad-potatis.jpg"
+  }, {
+    "id": 58,
+    "recipe_id": 82,
+    "name": "Kyckling med tomatbakat ris i ugn",
+    "description": "En m\u00e5ltid som sk\u00f6ter sig sj\u00e4lv i ugnen \u00e4r alltid uppskattad. Okokt ris h\u00e4lls i en ugnss\u00e4ker form innan skivade kycklingfil\u00e9er l\u00e4ggs p\u00e5 toppen. Som gr\u00e4dden p\u00e5 moset h\u00e4lls en f\u00e4rgstark och smakrik tomats\u00e5s \u00f6ver. Str\u00f6 lite riven ost \u00f6ver grat\u00e4ngen, och skjuts in i ugnen!",
+    "country": null,
+    "type": "main_course",
+    "allergic_type": "glutenFree",
+    "energy": 0,
+    "preparing_time": null,
+    "cooking_time": "UNDER 45 MIN",
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_195204\/cf_259\/kyckling-med-tomatbakat-ris-i-ugn-724998.jpg"
+  }, {
+    "id": 61,
+    "recipe_id": 85,
+    "name": "Gryta med krispigt rimmat fl\u00e4sk",
+    "description": "Man kan n\u00e4stan aldrig f\u00e5 nog av grytor! I denna \u00e4r det rimmat stekfl\u00e4sk som har huvudrollen, och efter den stekts knaprig blandas den med gr\u00e4dde, stekt l\u00f6k och hackade mor\u00f6tter.",
+    "country": "guyg",
+    "type": "main_course",
+    "allergic_type": "glutenFree",
+    "energy": 0,
+    "preparing_time": null,
+    "cooking_time": "UNDER 30 MIN",
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_195212\/cf_259\/gryta-med-krispigt-rimmat-flask-724999.jpg"
+  }, {
+    "id": 62,
+    "recipe_id": 86,
+    "name": "\u00c4ggpizza",
+    "description": "\u00c4ggpizzan kommer bli nya favoriten. F\u00f6rgr\u00e4dda botten som \u00e4r gjord p\u00e5 enbart \u00e4gg och ost i ugnen och gr\u00e4dda sedan med toppingen p\u00e5. Ett roligt, nytt s\u00e4tt att g\u00f6ra pizza. Och det blir riktigt gott!",
+    "country": null,
+    "type": "main_course",
+    "allergic_type": "glutenFree",
+    "energy": 4401,
+    "preparing_time": null,
+    "cooking_time": "UNDER 45 MIN",
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_163546\/cf_259\/breakfast-pizza-722303-liten.jpg"
+  }, {
+    "id": 63,
+    "recipe_id": 87,
+    "name": "Bl\u00e5b\u00e4rscheesecake med mynta",
+    "description": "En vacker bl\u00e5b\u00e4rscheesecake med mynta d\u00e4r smakerna fullkomligt sm\u00e4lter i munnen.",
+    "country": null,
+    "type": "dessert",
+    "allergic_type": "normal",
+    "energy": 1756,
+    "preparing_time": "\u00d6VER 60 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_159833\/cf_259\/cheesecake-med-citron-och-mynta-liten-721966.jpg"
+  }, {
     "id": 64,
-    "author": "ICA",
-    "title": "Det enda du beh\u00f6ver \u00e4r jordn\u00f6tter, salt, olja och en matberedare.",
-    "instructure": "S\u00e4tt ugnen p\u00e5 200\u00b0C.\n\nSprid ut n\u00f6tterna p\u00e5 en pl\u00e5t. Rosta i mitten av ugnen 10\u201312 minuter, tills de f\u00e5r lite f\u00e4rg. Ta ut och l\u00e5t svalna.\n\nMixa n\u00f6tterna i en matberedare med olja och salt tills det blir sl\u00e4tt, ca 3\u20134 minuter. L\u00e4gg i en burk och f\u00f6rvara i kylen.\n\nProva g\u00e4rna n\u00e5got av v\u00e5ra andra Hemgjorda n\u00f6tsm\u00f6r t ex Hasseln\u00f6tssm\u00f6r, Mandelsm\u00f6r eller Valn\u00f6tssm\u00f6r.",
-    "rating": 4.5,
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/64",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/64\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/64\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/64\/ingredients",
-    "meal": {
-      "id": 40,
-      "recipe_id": 64,
-      "name": "Hemmagjort jordn\u00f6tssm\u00f6r",
-      "description": "Detta \u00e4r ett recept fr\u00e5n Buff\u00e9",
-      "country": null,
-      "type": "snack",
-      "allergic_type": "glutenFree",
-      "energy": 0,
-      "preparing_time": "UNDER 45 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_194483\/cf_259\/hemmagjort-jordnotssmor-725208-liten.jpg"
-    },
-    "ingredients": [{
-      "id": 21,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 64,
-        "ingredient_id": 21,
-        "amount": "1 krm"
-      }
-    }, {
-      "id": 22,
-      "name": "rapsolja",
-      "pivot": {
-        "recipe_id": 64,
-        "ingredient_id": 22,
-        "amount": "3 msk"
-      }
-    }, {
-      "id": 23,
-      "name": "naturella jordn\u00f6tter",
-      "pivot": {
-        "recipe_id": 64,
-        "ingredient_id": 23,
-        "amount": "200 g"
-      }
-    }],
-    "comments": [{
-      "id": 5,
-      "headline": null,
-      "body": "I really like this recipe , i did try and enjoy , thanks ",
-      "rank": 5,
-      "recipe_id": 64,
-      "user_id": 3
-    }, {
-      "id": 6,
-      "headline": null,
-      "body": "One of the best recipe .",
-      "rank": 4,
-      "recipe_id": 64,
-      "user_id": 3
-    }]
+    "recipe_id": 88,
+    "name": "Lax i ugn med basilika och tomat",
+    "description": "Lax i ugn med basilika och tomat \u00e4r i grunden den k\u00e4ra klassikern d\u00e4r smakerna h\u00f6js till skyarna med hj\u00e4lp av kryddningen",
+    "country": "Sweden",
+    "type": "main_course",
+    "allergic_type": "glutenFree",
+    "energy": 1598,
+    "preparing_time": null,
+    "cooking_time": "UNDER 45 MIN",
+    "image": "https:\/\/receptfavoriter.se\/sites\/default\/files\/lax_i_ugn_med_mozzarella_1060.jpg"
   }, {
     "id": 65,
-    "author": "ICA",
-    "title": "Detta \u00e4r ett recept fr\u00e5n Buff\u00e9 nr 1, 2005",
-    "instructure": "Mixa b\u00f6norna eller linserna med ca h\u00e4lften av vattnet i mixer eller med mixerstav tills det blir en tunn v\u00e4tska. Tills\u00e4tt resten av vattnet s\u00e5 att det tillsammans blir 7 dl degv\u00e4tska (f\u00f6r 12 sm\u00e5br\u00f6d).\nV\u00e4rm degv\u00e4tskan till 42\u00b0C (anv\u00e4nd g\u00e4rna en termometer). H\u00e4ll j\u00e4sten i en bunke och h\u00e4ll v\u00e4tskan \u00f6ver eller blanda ihop enligt anvisning p\u00e5 f\u00f6rpackningen.\nTills\u00e4tt salt, olja, sirap, r\u00e5gsikt och till sist h\u00e4lften av vetemj\u00f6let. Arbeta in resten av mj\u00f6let efter hand. Arbeta degen med tr\u00e4gaffel tills den sl\u00e4pper fr\u00e5n bunkens kanter. L\u00e5t degen j\u00e4sa \u00f6vert\u00e4ckt i bunken 30 minuter.\n\nH\u00e4ll ut degen p\u00e5 mj\u00f6lad arbetsb\u00e4nk och kn\u00e5da den l\u00e4tt. Dela degen i tv\u00e5 delar och rulla dem till l\u00e4ngder. Sk\u00e4r varje l\u00e4ngd i 6 delar och rulla till 12 bullar (f\u00f6r 12 sm\u00e5br\u00f6d). Sk\u00e5ra ev bullarna med vass kniv. L\u00e4gg dem p\u00e5 pl\u00e5tar med bakpl\u00e5tspapper. J\u00e4s \u00f6vert\u00e4ckt i ca 30 minuter.\n\nS\u00e4tt ugnen p\u00e5 225\u00b0C.\nGr\u00e4dda i ca 15 minuter mitt i ugnen.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/65",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/65\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/65\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/65\/ingredients",
-    "meal": {
-      "id": 41,
-      "recipe_id": 65,
-      "name": "Baka br\u00f6d med baljv\u00e4xter",
-      "description": "Baka br\u00f6d med baljv\u00e4xter som linser, kik\u00e4rter och sojab\u00f6nor! Ett f\u00f6rstaklassigt br\u00f6drecept som tack vare sirap, rapsolja och vetemj\u00f6l special ger dig saftiga och h\u00e4rliga sm\u00e5br\u00f6d.",
-      "country": null,
-      "type": "snack",
-      "allergic_type": "vegan",
-      "energy": 1220,
-      "preparing_time": "ca 55 minuter.",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_14697\/cf_259\/400238-baka_br-d_med_baljv-xter-baka_baljvaxt_b010.jpg"
-    },
-    "ingredients": [{
-      "id": 24,
-      "name": "kokta, avrunna och sk\u00f6ljda linser (bruna eller r\u00f6da), kik\u00e4rter eller sojab\u00f6nor",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 24,
-        "amount": "250 g"
-      }
-    }, {
-      "id": 25,
-      "name": "torrj\u00e4st (12 g motsvarar 1 p\u00e5se)",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 25,
-        "amount": "12 g"
-      }
-    }, {
-      "id": 26,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 26,
-        "amount": "2 tsk"
-      }
-    }, {
-      "id": 27,
-      "name": "rapsolja",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 27,
-        "amount": "1\/2 dl"
-      }
-    }, {
-      "id": 28,
-      "name": "ljus sirap",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 28,
-        "amount": "1 msk"
-      }
-    }, {
-      "id": 29,
-      "name": "r\u00e5gsikt",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 29,
-        "amount": "5 dl"
-      }
-    }, {
-      "id": 30,
-      "name": "vetemj\u00f6l special",
-      "pivot": {
-        "recipe_id": 65,
-        "ingredient_id": 30,
-        "amount": "7 - 7 1\/2 dl"
-      }
-    }],
-    "comments": []
+    "recipe_id": 89,
+    "name": "\u00c4delostsallad med gulbetor",
+    "description": "Inneh\u00e5ller laktos och mj\u00f6lkprotein.",
+    "country": "Turky",
+    "type": "salad",
+    "allergic_type": "vegetarian",
+    "energy": 0,
+    "preparing_time": "UNDER 30 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_178331\/cf_259\/crudite-er-med-lo-jromsdipp-723540-liten.jpg"
   }, {
     "id": 66,
-    "author": "ICA",
-    "title": "Vegansk salad, fri fr\u00e5n gluten, laktos, mj\u00f6lkprotein och \u00e4gg.",
-    "instructure": "Skala, dela och finhacka l\u00f6ken. Dela, k\u00e4rna ut och finhacka \u00e4pplet. Skala och sk\u00e4r potatisen i sm\u00e5 t\u00e4rningar. Finhacka saltgurka och kapris.\nBlanda samtliga ingredienser i en sk\u00e5l. Krydda med salt. L\u00e5t st\u00e5 10 minuter.\n\nPressa ner sillsalladen i en liten plastkl\u00e4dd sk\u00e5l. V\u00e4nd upp p\u00e5 ett fat.\nVispa gr\u00e4dden rosa med r\u00f6dbetsspadet. Servera till sillsalladen.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/66",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/66\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/66\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/66\/ingredients",
-    "meal": {
-      "id": 42,
-      "recipe_id": 66,
-      "name": "Vegansk sillsallad",
-      "description": "Med syran fr\u00e5n kaprisen och saltgurkan kommer ingen att sakna sillen i denna sillfria sillsallad. Det \u00e4r sprakande, f\u00e4rgglatt och v\u00e4ldigt gott! Piffa till din veganska sillsallad lite extra genom att f\u00e4rga vispad sojagr\u00e4dde rosa med r\u00f6dbetsspad och servera till.",
-      "country": "Sverige",
-      "type": "salad",
-      "allergic_type": "vegan",
-      "energy": 374,
-      "preparing_time": "UNDER 45 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_152146\/cf_259\/vegansk-sillsallad-721409-liten.jpg"
-    },
-    "ingredients": [{
-      "id": 31,
-      "name": "r\u00f6dl\u00f6k",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 31,
-        "amount": "1"
-      }
-    }, {
-      "id": 32,
-      "name": "\u00e4pple",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 32,
-        "amount": "1"
-      }
-    }, {
-      "id": 33,
-      "name": "kokta kalla potatisar",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 33,
-        "amount": "2"
-      }
-    }, {
-      "id": 34,
-      "name": "saltgurkor",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 34,
-        "amount": "2"
-      }
-    }, {
-      "id": 35,
-      "name": "kapris",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 35,
-        "amount": "2 msk"
-      }
-    }, {
-      "id": 36,
-      "name": "finhackade inlagda r\u00f6dbetor",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 36,
-        "amount": "3 dl"
-      }
-    }, {
-      "id": 37,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 37,
-        "amount": "1\/2"
-      }
-    }, {
-      "id": 38,
-      "name": "vispbar sojagr\u00e4dde",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 38,
-        "amount": "2 dl"
-      }
-    }, {
-      "id": 39,
-      "name": "r\u00f6dbetsspad",
-      "pivot": {
-        "recipe_id": 66,
-        "ingredient_id": 39,
-        "amount": "ev 1 msk"
-      }
-    }],
-    "comments": []
+    "recipe_id": 90,
+    "name": "Fiskgryta med kokosmj\u00f6lk och broccoli",
+    "description": "Denna fiskgryta g\u00f6mmer smaker som ingef\u00e4ra, vitl\u00f6k och sambal oelek! H\u00e4rliga kryddor f\u00e5r stekas i stekpannan f\u00f6r att smakerna ska komma till sin r\u00e4tt, och fisken g\u00f6r dem sedan s\u00e4llskap tillsammans med kokosmj\u00f6lken.",
+    "country": "Sweden",
+    "type": "starter",
+    "allergic_type": "lactoseFree",
+    "energy": 2552,
+    "preparing_time": null,
+    "cooking_time": "UNDER 45 MIN",
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_195196\/cf_259\/fiskgryta-med-kokosmjolk-och-broccoli-724997.jpg"
   }, {
     "id": 67,
-    "author": "ICA",
-    "title": "Vegansk curry, fri fr\u00e5n gluten, laktos, mj\u00f6lkprotein och \u00e4gg",
-    "instructure": "Hacka syltl\u00f6ken och r\u00f6r ihop med lagen, cr\u00e8me fraiche och majonn\u00e4s. Krydda med curry och smaka av med salt och peppar.\nL\u00e5t Vegansillen rinna av och v\u00e4nd ner i s\u00e5sen.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/67",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/67\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/67\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/67\/ingredients",
-    "meal": {
-      "id": 43,
-      "recipe_id": 67,
-      "name": "Vegansk currysill av aubergine",
-      "description": "Currysill har blivit ett vanligt inslag p\u00e5 sillbordet. Den h\u00e4r veganska currysillen \u00e4r supersmaskig och g\u00e5r snabbt att r\u00f6ra ihop. Vegansk cr\u00e8me fraiche och \u00e4ggfri majonn\u00e4s g\u00f6r den extra kr\u00e4mig. Servera currysillen p\u00e5 buff\u00e9n eller p\u00e5 en kavring som en liten f\u00f6rr\u00e4tt n\u00e4r g\u00e4sterna kommer.",
-      "country": "Sverige",
-      "type": "main_course",
-      "allergic_type": "vegan",
-      "energy": 1483,
-      "preparing_time": "UNDER 30 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_151144\/cf_259\/vegansk-senapssill-721247-sm-.jpg"
-    },
-    "ingredients": [{
-      "id": 40,
-      "name": "syltl\u00f6k",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 40,
-        "amount": "1\/2 d"
-      }
-    }, {
-      "id": 41,
-      "name": "lag fr\u00e5n l\u00f6ken",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 41,
-        "amount": "1 msk"
-      }
-    }, {
-      "id": 42,
-      "name": "vegansk cr\u00e8me fraiche",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 42,
-        "amount": "1\/2 dl"
-      }
-    }, {
-      "id": 43,
-      "name": "\u00e4gg-, laktos- och mj\u00f6lkproteinfri majonn\u00e4s",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 43,
-        "amount": "1 1\/2 dl"
-      }
-    }, {
-      "id": 44,
-      "name": "curry",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 44,
-        "amount": "1\/2 msk"
-      }
-    }, {
-      "id": 45,
-      "name": "salt och peppar",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 45,
-        "amount": "-"
-      }
-    }, {
-      "id": 46,
-      "name": "inlagd vegansk sill (se l\u00e4nk under steg 2)",
-      "pivot": {
-        "recipe_id": 67,
-        "ingredient_id": 46,
-        "amount": "1 sats"
-      }
-    }],
-    "comments": []
+    "recipe_id": 91,
+    "name": "Kotlett med rostad potatis och piemento de padrons",
+    "description": "En saftig kotlett ihop med rostad potatis och sm\u00e5 pimientos st\u00e5r p\u00e5 kv\u00e4llens meny! En s\u00e5dan h\u00e4r r\u00e4tt beh\u00f6ver inte s\u00e4ljas in mer, men f\u00f6r att toppa s\u00e5 serveras middagen ihop med en sm\u00e5het chilimajonn\u00e4s.",
+    "country": null,
+    "type": "starter",
+    "allergic_type": "normal",
+    "energy": 3157,
+    "preparing_time": null,
+    "cooking_time": "UNDER 45 MIN",
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_162991\/cf_259\/kotlett-med-pimiento-de-padrons-och-rostad-potatis.jpg"
   }, {
     "id": 68,
-    "author": "ICA",
-    "title": "Fri fr\u00e5n laktos. Inneh\u00e5ller mj\u00f6lkprotein och \u00e4gg. G\u00f6r glutenfri: v\u00e4lj glutenfria digestivekex (kan inneh\u00e5lla laktos).",
-    "instructure": "S\u00e4tt ugnen p\u00e5 175\u00b0C.\nL\u00e4gg kex och sm\u00f6r i en mixer. Mixa till en j\u00e4mn deg.\nTryck ut i botten p\u00e5 en form med avtagbara kanter (20 cm i diameter, f\u00f6r 12 bitar).\nFyllning: L\u00e4gg yoghurtkvarg i en sk\u00e5l. Kn\u00e4ck i \u00e4ggen.\nH\u00e4ll i socker, vanilj, majsst\u00e4rkelse och gr\u00e4dde. R\u00f6r s\u00e5 att allt blandas.\nF\u00f6rdela smeten i tv\u00e5 bunkar.\nMixa mango i en mixer och blanda ner i den ena bunken.\nR\u00f6r i matchapulver i den andra bunken.\nH\u00e4ll de b\u00e5da smakerna i formen.\nDra med en gaffel s\u00e5 att det blir ett m\u00f6nster.\nGr\u00e4dda kakan mitt i ugnen i 40 minuter. Ta ut och l\u00e5t svalna.\n\nSt\u00e4ll in i kylen i 30 minuter innan du sk\u00e4r kakan.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/68",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/68\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/68\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/68\/ingredients",
-    "meal": {
-      "id": 44,
-      "recipe_id": 68,
-      "name": "Cheesecake med mango och matcha",
-      "description": "Bjud p\u00e5 en fr\u00e4sch cheesecake med smak av gr\u00f6nt te och frisk mango p\u00e5 en krispig botten gjord av digestivekex. En riktig smakfulltr\u00e4ff! Full\u00e4nda bakverket genom att pynta cheesecaken med syrliga lingon eller r\u00f6da vinb\u00e4r.",
-      "country": "Sverige",
-      "type": "dessert",
-      "allergic_type": "lactoseFree",
-      "energy": 17187,
-      "preparing_time": "UNDER 45 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_178363\/cf_259\/cheesecake-mango-matcha-580x580.jpg"
-    },
-    "ingredients": [{
-      "id": 47,
-      "name": "laktosfri yoghurtkvarg",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 47,
-        "amount": "5 dl"
-      }
-    }, {
-      "id": 48,
-      "name": "\u00e4gg",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 48,
-        "amount": "4"
-      }
-    }, {
-      "id": 49,
-      "name": "str\u00f6socker",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 49,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 50,
-      "name": "vaniljpulver",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 50,
-        "amount": "1\/2 tsk"
-      }
-    }, {
-      "id": 51,
-      "name": "majsst\u00e4rkelse",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 51,
-        "amount": "3\/4 dl"
-      }
-    }, {
-      "id": 52,
-      "name": "laktosfri vispgr\u00e4dde",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 52,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 53,
-      "name": "matchapulver (gr\u00f6nt te i pulverform)",
-      "pivot": {
-        "recipe_id": 68,
-        "ingredient_id": 53,
-        "amount": "2 tsk"
-      }
-    }],
-    "comments": []
+    "recipe_id": 92,
+    "name": "Veganska p\u00e5sk\u00e4gg med choklad",
+    "description": "Sm\u00e5 fina p\u00e5sk\u00e4gg som g\u00e5r att dekorera efter sin egen fantasi, anv\u00e4nd olika sorters choklad och doppa i kokos, hackade n\u00f6tter eller frystorkade hallon.",
+    "country": null,
+    "type": "dessert",
+    "allergic_type": "vegan",
+    "energy": 199,
+    "preparing_time": "UNDER 60 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_177961\/cf_259\/veganska_paskagg-med-choklad_723513.jpg"
   }, {
     "id": 69,
-    "author": "ICA",
-    "title": "Fri fr\u00e5n gluten och \u00e4gg.",
-    "instructure": "S\u00e4tt ugnen p\u00e5 125\u00b0C.\nJord\u00e4rtskockschips: Blanda olja och vatten i en sk\u00e5l. Tv\u00e4tta jord\u00e4rt\u00adskockorna noga och hyvla dem tunt, g\u00e4rna p\u00e5 mandolin.\nDoppa skivorna i v\u00e4tskan och sprid ut dem p\u00e5 en bakpappers\u00adkl\u00e4dd pl\u00e5t. Str\u00f6 \u00f6ver salt. St\u00e4ll in i mitten av ugnen ca 40 minuter. Ta ut och l\u00e5t svalna.\n\nSoppa: Ansa eller sk\u00f6lj svampen. Skiva den. Skala och finhacka l\u00f6k och vitl\u00f6k.\nH\u00e4ll svampen i en kastrull. Tills\u00e4tt 1 dl av vattnet (f\u00f6r 4 port) och l\u00e5t svampen f\u00f6rv\u00e4llas p\u00e5 l\u00e5g v\u00e4rme tills all v\u00e4tska kokat bort.\nFr\u00e4s l\u00f6k och vitl\u00f6k i sm\u00f6r i en stor kastrull p\u00e5 medelv\u00e4rme tills den mjuknar. Tills\u00e4tt svampen och vinet, l\u00e5t koka ihop n\u00e5gra minuter.\nTills\u00e4tt fonden, resten av vattnet och gr\u00e4dden. Koka 10 minuter p\u00e5 svag v\u00e4rme.\n\nTills\u00e4tt mj\u00f6lken. Krydda med salt och peppar och mixa sl\u00e4t med stavmixer.\nTill servering: Servera soppan med jord\u00e4rtskockschips, f\u00e4rsk timjan och n\u00e5gra droppar tryffelolja.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/69",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/69\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/69\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/69\/ingredients",
-    "meal": {
-      "id": 45,
-      "recipe_id": 69,
-      "name": "Svampsoppa med skogschampinjoner och jord\u00e4rtskockschips",
-      "description": "En kr\u00e4mig och mustig h\u00f6stsoppa som v\u00e4rmer \u00e4nda in i sj\u00e4len! Soppan g\u00f6rs p\u00e5 skogschampinjoner, schalottenl\u00f6k, vitt vin, kantarellfond och gr\u00e4dde. Servera med krispiga jord\u00e4rtskockschips i ugn som blir pricken \u00f6ver i. Toppa svampsoppan med f\u00e4rsk timjan och tryffelolja vid servering!",
-      "country": null,
-      "type": "starter",
-      "allergic_type": "vegan",
-      "energy": 1676,
-      "preparing_time": null,
-      "cooking_time": "\u00d6VER 60 MIN",
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_188278\/cf_259\/svampsoppa-med-skogschampinjoner-och-jordartskocks.jpg"
-    },
-    "ingredients": [{
-      "id": 54,
-      "name": "olivolja",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 54,
-        "amount": "1 msk"
-      }
-    }, {
-      "id": 55,
-      "name": "vatten",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 55,
-        "amount": "1\/2 dl"
-      }
-    }, {
-      "id": 56,
-      "name": "jord\u00e4rtskockor",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 56,
-        "amount": "3"
-      }
-    }, {
-      "id": 57,
-      "name": "flingsalt",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 57,
-        "amount": "2 krm"
-      }
-    }, {
-      "id": 58,
-      "name": "skogschampinjoner",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 58,
-        "amount": "250 g"
-      }
-    }, {
-      "id": 59,
-      "name": "bananschalottenl\u00f6k",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 59,
-        "amount": "1"
-      }
-    }, {
-      "id": 60,
-      "name": "vitl\u00f6ksklyfta",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 60,
-        "amount": "1"
-      }
-    }, {
-      "id": 61,
-      "name": "sm\u00f6r",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 61,
-        "amount": "2 msk"
-      }
-    }, {
-      "id": 62,
-      "name": "vitt vin",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 62,
-        "amount": "2 dl"
-      }
-    }, {
-      "id": 63,
-      "name": "konc kantarellfond",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 63,
-        "amount": "3 msk"
-      }
-    }, {
-      "id": 64,
-      "name": "vatten",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 64,
-        "amount": "6 dl"
-      }
-    }, {
-      "id": 65,
-      "name": "vispgr\u00e4dde",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 65,
-        "amount": "3 dl"
-      }
-    }, {
-      "id": 66,
-      "name": "mj\u00f6lk",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 66,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 67,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 67,
-        "amount": "-"
-      }
-    }, {
-      "id": 68,
-      "name": "vitpeppar",
-      "pivot": {
-        "recipe_id": 69,
-        "ingredient_id": 68,
-        "amount": "-"
-      }
-    }],
-    "comments": []
+    "recipe_id": 93,
+    "name": "Falafelbowl med hummus",
+    "description": "Beh\u00f6ver du en enkel, fr\u00e4sch och snabb vardagsmiddag? Laga falafelbowl! Med fryst falafel g\u00e5r det p\u00e5 mindre \u00e4n en kvart att laga middagen.",
+    "country": null,
+    "type": "main_course",
+    "allergic_type": "vegan",
+    "energy": 2731,
+    "preparing_time": "UNDER 15 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_194372\/cf_259\/falafelbowl-med-hummus-725213-liten.jpg"
   }, {
     "id": 70,
-    "author": "ICA",
-    "title": "Lasagnen inneh\u00e5ller gluten, laktos, mj\u00f6lkprotein och \u00e4gg.",
-    "instructure": "S\u00e4tt ugnen p\u00e5 250\u00b0C.\nSkala och finhacka vitl\u00f6ken. Sk\u00e4r zucchinin i cm\u2013tjocka t\u00e4rningar. Strimla baconet. Stek zucchini och bacon i 2 msk olja i en stor stekpanna, de ska f\u00e5 fin f\u00e4rg. R\u00f6r i vitl\u00f6ken mot slutet. Krydda med salt och peppar.\nBlanda pastas\u00e5sen med socker. Bred ett tunt lager pastas\u00e5s i bottnen av en ugnss\u00e4ker form, ca 20 x 30 cm (f\u00f6r 4 port).\nVarva lasagneplattor, pastas\u00e5s, bacon- och zucchinifr\u00e4s och cottage cheese. Avsluta med ett tunt lager pastas\u00e5s. Toppa med riven ost. Tillaga lasagnen mitt i ugnen ca 20 minuter. G\u00f6r vitk\u00e5lssalladen under tiden.\n\nVitk\u00e5lssallad: Sk\u00e4r vitk\u00e5len i tunna strimlor eller hyvla med osthyvel. Skala och grovriv mor\u00f6tterna. Blanda vitk\u00e5l, mor\u00f6tter och majs i en sk\u00e5l med olja, vin\u00e4ger, salt och peppar. Servera lasagnen med vitk\u00e5lssalladen.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/70",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/70\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/70\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/70\/ingredients",
-    "meal": {
-      "id": 46,
-      "recipe_id": 70,
-      "name": "Lasagne med kalkonbacon och zucchini",
-      "description": "G\u00f6r en h\u00e4rlig variant av lasagne som kommer bli mycket uppskattad av b\u00e5de stora och sm\u00e5. Varva dina pastaplattor med mild cottage cheese och smarrigt kalkonbacon- och zucchinifr\u00e4s som gr\u00e4ddas i ugn. Avnjut din goda lasagne med nygjord vitk\u00e5lssallad.",
-      "country": null,
-      "type": "main_course",
-      "allergic_type": "normal",
-      "energy": 0,
-      "preparing_time": null,
-      "cooking_time": "\u00d6VER 60 MIN",
-      "image": "https:\/\/www.ica.se\/\/icase.azureedge.net\/imagevaultfiles\/id_155795\/cf_6901\/canneloni-med-zucchini-och-linser-721742.jpg"
-    },
-    "ingredients": [{
-      "id": 69,
-      "name": "f\u00e4rska lasagneplattor",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 69,
-        "amount": "300 g"
-      }
-    }, {
-      "id": 70,
-      "name": "vitl\u00f6ksklyfta",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 70,
-        "amount": "1"
-      }
-    }, {
-      "id": 71,
-      "name": "zucchini",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 71,
-        "amount": "1"
-      }
-    }, {
-      "id": 72,
-      "name": "paket kalkonbacon (\u00e0 100 g)",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 72,
-        "amount": "2"
-      }
-    }, {
-      "id": 73,
-      "name": "pastas\u00e5s med basilika",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 73,
-        "amount": "2 f\u00f6rpackningar"
-      }
-    }, {
-      "id": 74,
-      "name": "cottage cheese",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 74,
-        "amount": "1 burk"
-      }
-    }, {
-      "id": 75,
-      "name": "riven ost t ex sveciaost",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 75,
-        "amount": "1 1\/2 dl"
-      }
-    }, {
-      "id": 76,
-      "name": "olivolja",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 76,
-        "amount": "-"
-      }
-    }, {
-      "id": 77,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 77,
-        "amount": "1\/2 tsk"
-      }
-    }, {
-      "id": 78,
-      "name": "peppar",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 78,
-        "amount": "2 krm"
-      }
-    }, {
-      "id": 79,
-      "name": "vitk\u00e5lshuvud",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 79,
-        "amount": "1\/4"
-      }
-    }, {
-      "id": 80,
-      "name": "mor\u00f6tter",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 80,
-        "amount": "2"
-      }
-    }, {
-      "id": 81,
-      "name": "avrunnen majs",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 81,
-        "amount": "1\/2 burk"
-      }
-    }, {
-      "id": 82,
-      "name": "olja",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 82,
-        "amount": "3 msk"
-      }
-    }, {
-      "id": 83,
-      "name": "vitvinsvin\u00e4ger",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 83,
-        "amount": "1 1\/2 msk"
-      }
-    }, {
-      "id": 84,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 84,
-        "amount": "2 krm"
-      }
-    }, {
-      "id": 85,
-      "name": "peppar",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 85,
-        "amount": "1 krm"
-      }
-    }, {
-      "id": 86,
-      "name": "kalkon (\u00e0 100 g)",
-      "pivot": {
-        "recipe_id": 70,
-        "ingredient_id": 86,
-        "amount": "2 paket"
-      }
-    }],
-    "comments": []
+    "recipe_id": 94,
+    "name": "Linscurry med risnudlar",
+    "description": "Linser b\u00e5de m\u00e4ttar bra och \u00e4r goda. H\u00e4r anv\u00e4nder du dem i en kr\u00e4mig linscurry med h\u00e4rliga smaker fr\u00e5n ingef\u00e4ra, l\u00f6k och mor\u00f6tter.",
+    "country": null,
+    "type": "main_course",
+    "allergic_type": "vegetarian",
+    "energy": 2892,
+    "preparing_time": "UNDER 45 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_194212\/cf_259\/linscurry-i-kokosmjolk-724854.jpg"
   }, {
     "id": 71,
-    "author": "ICA",
-    "title": null,
-    "instructure": "S\u00e4tt ugnen p\u00e5 225\u00b0C.\nLasagne: H\u00e4ll linserna i ett durkslag, spola dem i kallt vatten och l\u00e5t rinna av.\nL\u00e5t paprikorna rinna av och sk\u00e4r dem i grova bitar. Grovhacka basilikan. \nBlanda linser, pastas\u00e5serna och basilikan i en kastrull och l\u00e5t koka upp. \nVarva lasagneplattorna med pastas\u00e5sen, paprika, och h\u00e4lften av cr\u00e8me fraichen i en ugnss\u00e4ker form. Salta och peppra mellan lagren.\nAvsluta med ett lager pastas\u00e5s och resten av cr\u00e8me fraichen. Riv \u00f6ver mozzarellan. Tillaga lasagnen mitt i ugnen ca 25 minuter.\n\nSallad: Skala och skiva l\u00f6ken tunt. Sk\u00e4r salladen i bitar. Blanda l\u00f6k och sallad.\nServera lasagnen med salladen.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/71",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/71\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/71\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/71\/ingredients",
-    "meal": {
-      "id": 47,
-      "recipe_id": 71,
-      "name": "Linslasagne med paprika och mozzarella",
-      "description": "Lasagne \u00e4r alltid en bra id\u00e9! Denna variant har kr\u00e4miga linser och grillad paprika som huvudroller. Pastas\u00e5serna ger sm\u00e5 hintar av chili och basilika, och toppas med mjuk och saftig mozzarella!",
-      "country": null,
-      "type": "main_course",
-      "allergic_type": "normal",
-      "energy": 2767,
-      "preparing_time": null,
-      "cooking_time": "UNDER 45 MIN",
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_193004\/cf_259\/linslasagne-med-paprika-och-mozzarella_-v4-724556.jpg"
-    },
-    "ingredients": [{
-      "id": 87,
-      "name": "kokta gr\u00f6na linser (\u00e0 380 g)",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 87,
-        "amount": "2 f\u00f6rp"
-      }
-    }, {
-      "id": 88,
-      "name": "grillad paprika",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 88,
-        "amount": "530 g"
-      }
-    }, {
-      "id": 89,
-      "name": "basilika",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 89,
-        "amount": "1 kruka"
-      }
-    }, {
-      "id": 90,
-      "name": "pastas\u00e5s tomat & chili",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 90,
-        "amount": "390 g"
-      }
-    }, {
-      "id": 91,
-      "name": "pastas\u00e5s tomat & basilika",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 91,
-        "amount": "390 g"
-      }
-    }, {
-      "id": 92,
-      "name": "l\u00e4tt cr\u00e8me fraiche",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 92,
-        "amount": "3 dl"
-      }
-    }, {
-      "id": 93,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 93,
-        "amount": "-"
-      }
-    }, {
-      "id": 94,
-      "name": "peppar",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 94,
-        "amount": "-"
-      }
-    }, {
-      "id": 95,
-      "name": "mozzarella (\u00e0 125g)",
-      "pivot": {
-        "recipe_id": 71,
-        "ingredient_id": 95,
-        "amount": "1 f\u00f6rp"
-      }
-    }],
-    "comments": []
+    "recipe_id": 95,
+    "name": "Lax- och sparrissallad med krispig spenat- och \u00e4ggpaj",
+    "description": "Kan det bli mer v\u00e5r \u00e4n s\u00e5 h\u00e4r? I den h\u00e4r middagen ryms flera av v\u00e5rens mest typiska ingredienser; \u00e4gg, lax och spenat i en vacker symfoni.",
+    "country": "USA",
+    "type": "snack",
+    "allergic_type": "lactoseFree",
+    "energy": 2107,
+    "preparing_time": null,
+    "cooking_time": "UNDER 45 MIN",
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_63212\/cf_259\/lax-_och_sparrissallad_med_krispig_spenat-_och_-gg.jpg"
   }, {
     "id": 72,
-    "author": "ICA",
-    "title": "Inneh\u00e5ller gluten och \u00e4gg.",
-    "instructure": "S\u00e4tt ugnen p\u00e5 175\u00b0C.\nSm\u00f6rj och mj\u00f6la en form med l\u00f6stagbar kant, ca 24 cm i diameter. \nSm\u00e4lt sm\u00f6ret. Hacka chokladen och r\u00f6r ner i sm\u00f6ret. Forts\u00e4tt r\u00f6ra tills den sm\u00e4lt helt.\nBlanda socker, farinsocker, sirap och \u00e4gg i en bunke. Sikta ner mj\u00f6l och kakao. Tills\u00e4tt chokladblandningen och r\u00f6r till en j\u00e4mn smet. \nH\u00e4ll smeten i formen. Tryck ner bj\u00f6rnb\u00e4ren i smeten. Gr\u00e4dda kakan i mitten av ugnen ca 35 minuter. L\u00e5t svalna.\n\nServera kladdkakan med jordgubbar och vispad gr\u00e4dde.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/72",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/72\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/72\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/72\/ingredients",
-    "meal": {
-      "id": 48,
-      "recipe_id": 72,
-      "name": "Lyxig chokladkaka med sommarb\u00e4r",
-      "description": "Choklad\u00e4lskare se hit, det h\u00e4r kan bli din favoritt\u00e5rta! Testa en ljuvlig kombination av svensk kladdkaka och chokladintensiv fransk chokladt\u00e5rta. Bj\u00f6rnb\u00e4r i smeten ger ett extra smaklyft. Hallon g\u00e5r annars lika bra.",
-      "country": null,
-      "type": "dessert",
-      "allergic_type": "normal",
-      "energy": 2271,
-      "preparing_time": "\u00d6VER 60 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_97302\/cf_259\/lyxig-kladdkaka-med-sommarbar-717753.png"
-    },
-    "ingredients": [{
-      "id": 96,
-      "name": "sm\u00f6r och mj\u00f6l till formen",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 96,
-        "amount": "-"
-      }
-    }, {
-      "id": 97,
-      "name": "sm\u00f6r",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 97,
-        "amount": "225 g"
-      }
-    }, {
-      "id": 98,
-      "name": "m\u00f6rk choklad",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 98,
-        "amount": "100 g"
-      }
-    }, {
-      "id": 99,
-      "name": "socker",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 99,
-        "amount": "1 1\/2 dl"
-      }
-    }, {
-      "id": 100,
-      "name": "farinsocker",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 100,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 101,
-      "name": "ljus sirap",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 101,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 102,
-      "name": "\u00e4gg",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 102,
-        "amount": "3"
-      }
-    }, {
-      "id": 103,
-      "name": "vetemj\u00f6l",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 103,
-        "amount": "2 1\/2 dl"
-      }
-    }, {
-      "id": 104,
-      "name": "kakao",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 104,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 105,
-      "name": "frysta, tinade bj\u00f6rnb\u00e4r",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 105,
-        "amount": "150 g"
-      }
-    }, {
-      "id": 106,
-      "name": "f\u00e4rska jordgubbar och vispad gr\u00e4dde till servering",
-      "pivot": {
-        "recipe_id": 72,
-        "ingredient_id": 106,
-        "amount": "-"
-      }
-    }],
-    "comments": []
+    "recipe_id": 96,
+    "name": "Tonfisks\u00e5s med tagliatelle",
+    "description": "Visst uppskattar vi alltid en snabb pastar\u00e4tt? Denna \u00e4r dessutom supergod, vilket g\u00f6r det \u00e4nnu b\u00e4ttre.",
+    "country": null,
+    "type": "main_course",
+    "allergic_type": "lactoseFree",
+    "energy": 2711,
+    "preparing_time": "UNDER 30 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_195345\/cf_259\/tonfisksas-med-tagliatelle-725008.jpg"
   }, {
     "id": 73,
-    "author": "ICA",
-    "title": "Fri fr\u00e5n laktos men inneh\u00e5ller gluten och \u00e4gg.",
-    "instructure": "S\u00e4tt ugnen p\u00e5 200\u00b0C.\nPensla formarna med lite matolja. \nSm\u00e4lt sm\u00f6ret. \nR\u00f6r ihop socker och \u00e4gg i en bunke, blanda sedan f\u00f6rsiktigt i resten av ingredienserna. \nKlicka ut i formarna s\u00e5 att de n\u00e4stan fylls. \nSt\u00e4ll in i mitten p\u00e5 ugnen ca 10 minuter.\n\nK\u00e4nn efter med sticka, muffinsen skall vara kladdiga i mitten n\u00e4r du tar ut dem.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/73",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/73\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/73\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/73\/ingredients",
-    "meal": {
-      "id": 49,
-      "recipe_id": 73,
-      "name": "Sm\u00e5 laktosfria kladdkakor",
-      "description": "\u00c4r de sm\u00e5 f\u00e5r man ta tv\u00e5 brukar det ju heta. Och h\u00e4r kommer du garanterat inte n\u00f6ja dig med en. Smarriga kladdkakor i sm\u00e5tt format \u00e4r perfekt att servera p\u00e5 buff\u00e9n, barnkalaset eller varf\u00f6r inte \u00f6verraska kollegorna p\u00e5 jobbet!",
-      "country": null,
-      "type": "dessert",
-      "allergic_type": "lactoseFree",
-      "energy": 0,
-      "preparing_time": "UNDER 45 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_150125\/cf_259\/sma-laktosfria-kladdkakor-721339.jpg"
-    },
-    "ingredients": [{
-      "id": 107,
-      "name": "aluminiumformar",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 107,
-        "amount": "12 sm\u00e5"
-      }
-    }, {
-      "id": 108,
-      "name": "matolja (till formarna)",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 108,
-        "amount": "1 msk"
-      }
-    }, {
-      "id": 109,
-      "name": "laktosfritt sm\u00f6r",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 109,
-        "amount": "100 g"
-      }
-    }, {
-      "id": 110,
-      "name": "socker",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 110,
-        "amount": "2 1\/2 dl"
-      }
-    }, {
-      "id": 111,
-      "name": "\u00e4gg",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 111,
-        "amount": "2"
-      }
-    }, {
-      "id": 112,
-      "name": "vetemj\u00f6l",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 112,
-        "amount": "2 dl"
-      }
-    }, {
-      "id": 113,
-      "name": "kakao",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 113,
-        "amount": "4 msk"
-      }
-    }, {
-      "id": 114,
-      "name": "vaniljsocker",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 114,
-        "amount": "1 krm"
-      }
-    }, {
-      "id": 115,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 73,
-        "ingredient_id": 115,
-        "amount": "1\/2 - 1 krm"
-      }
-    }],
-    "comments": []
-  }, {
-    "id": 74,
-    "author": "ICA",
-    "title": "Servera med den rostade mandeln och couscous.",
-    "instructure": "Sk\u00e4r k\u00f6ttet i mindre bitar, ca 3x3 cm. Bryn det i omg\u00e5ngar i olivolja i en stekpanna. Salta och peppra och st\u00e4ll k\u00f6ttet \u00e5t sidan.\nSkala och hacka l\u00f6k och vitl\u00f6k. Sk\u00f6lj och strimla sellerin.\nFr\u00e4s l\u00f6k, vitl\u00f6k och selleri i olivolja i en gryta utan att det tar f\u00e4rg. Str\u00f6 \u00f6ver kryddorna och l\u00e5t dem fr\u00e4sa med en liten stund.\nL\u00e4gg i k\u00f6ttet i grytan, tills\u00e4tt fond och vatten. Koka grytan p\u00e5 svag v\u00e4rme under lock ca 1 timme. R\u00f6r n\u00e5gon g\u00e5ng under tiden.\n\nRosta mandeln i en torr och het stekpanna.\nBlanda ner aprikoserna i grytan och forts\u00e4tt koka tills k\u00f6ttet \u00e4r m\u00f6rt och aprikoserna mjuka, ca 20 minuter.\n\nSmaka av grytan med citronsaft, harissa och salt. V\u00e4nd ner koriandern och str\u00f6 \u00f6ver mandeln. Servera lammgrytan med couscous.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/74",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/74\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/74\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/74\/ingredients",
-    "meal": {
-      "id": 50,
-      "recipe_id": 74,
-      "name": "Lammgryta med aprikoser och mandel",
-      "description": "En aromatisk lammgryta med l\u00e4ckra aprikoser. K\u00f6ttet och aprikoserna kokas med flera olika kryddor, selleri och l\u00f6k f\u00f6r att bli m\u00f6rt och f\u00e5 sin fina smak. Servera med den rostade mandeln och couscous.",
-      "country": null,
-      "type": "main_course",
-      "allergic_type": "normal",
-      "energy": 0,
-      "preparing_time": null,
-      "cooking_time": "\u00d6VER 60 MIN",
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_16848\/cf_259\/lammgryta-med-aprikoser-och-mandel-605797.jpg"
-    },
-    "ingredients": [{
-      "id": 116,
-      "name": "benfri lammstek",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 116,
-        "amount": "ca 700 g"
-      }
-    }, {
-      "id": 117,
-      "name": "olivolja till stekning",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 117,
-        "amount": "-"
-      }
-    }, {
-      "id": 118,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 118,
-        "amount": "-"
-      }
-    }, {
-      "id": 119,
-      "name": "nymalen svartpeppar",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 119,
-        "amount": "-"
-      }
-    }, {
-      "id": 120,
-      "name": "gul l\u00f6k",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 120,
-        "amount": "1"
-      }
-    }, {
-      "id": 121,
-      "name": "vitl\u00f6ksklyftor",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 121,
-        "amount": "3"
-      }
-    }, {
-      "id": 122,
-      "name": "stj\u00e4lkar selleri",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 122,
-        "amount": "2"
-      }
-    }, {
-      "id": 123,
-      "name": "malen spiskummin",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 123,
-        "amount": "1 1\/2 tsk"
-      }
-    }, {
-      "id": 124,
-      "name": "nyst\u00f6tta korianderfr\u00f6n",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 124,
-        "amount": "1\/2 tsk"
-      }
-    }, {
-      "id": 125,
-      "name": "saffran",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 125,
-        "amount": "1\/2 g"
-      }
-    }, {
-      "id": 126,
-      "name": "paprikapulver",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 126,
-        "amount": "2 tsk"
-      }
-    }, {
-      "id": 127,
-      "name": "kanelst\u00e5ng",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 127,
-        "amount": "1"
-      }
-    }, {
-      "id": 128,
-      "name": "kalvfond",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 128,
-        "amount": "1 1\/2 msk"
-      }
-    }, {
-      "id": 129,
-      "name": "vatten",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 129,
-        "amount": "5 dl"
-      }
-    }, {
-      "id": 130,
-      "name": "sk\u00e5llad, skalad mandel",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 130,
-        "amount": "1 dl"
-      }
-    }, {
-      "id": 131,
-      "name": "torkade aprikoser",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 131,
-        "amount": "150 g"
-      }
-    }, {
-      "id": 132,
-      "name": "pressad citron",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 132,
-        "amount": "1 msk"
-      }
-    }, {
-      "id": 133,
-      "name": "harissa",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 133,
-        "amount": "ca 1 tsk"
-      }
-    }, {
-      "id": 134,
-      "name": "f\u00e4rsk hackad koriander",
-      "pivot": {
-        "recipe_id": 74,
-        "ingredient_id": 134,
-        "amount": "4 msk"
-      }
-    }],
-    "comments": []
-  }, {
-    "id": 75,
-    "author": "ICA",
-    "title": "Fri fr\u00e5n gluten och \u00e4gg.",
-    "instructure": "H\u00e4ll gr\u00e4ddfilen i ett kaffefilter och l\u00e5t den rinna av.\nBlanda ner pepparrot och honung i den avrunna gr\u00e4ddfilen. Smaka av med salt och peppar.\nServera g\u00e4rna tillsammans med Kumminbakad g\u00f6s och Syrlig k\u00e5l med vete och dill.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/75",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/75\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/75\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/75\/ingredients",
-    "meal": {
-      "id": 51,
-      "recipe_id": 75,
-      "name": "Pepparrotskr\u00e4m",
-      "description": "Aromatisk pepparrotskr\u00e4m med syrlig gr\u00e4ddfil och len flytande honung. Pepparrotskr\u00e4men \u00e4r god att servera till kumminbakad g\u00f6s och syrlig k\u00e5l med vete och dill.",
-      "country": null,
-      "type": "sauce",
-      "allergic_type": "vegetarian",
-      "energy": 460,
-      "preparing_time": "Ca 10 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_182754\/cf_259\/pepparrotskram-543005_1.jpg"
-    },
-    "ingredients": [{
-      "id": 135,
-      "name": "gr\u00e4ddfil",
-      "pivot": {
-        "recipe_id": 75,
-        "ingredient_id": 135,
-        "amount": "3 dl"
-      }
-    }, {
-      "id": 136,
-      "name": "riven pepparrot",
-      "pivot": {
-        "recipe_id": 75,
-        "ingredient_id": 136,
-        "amount": "2 msk"
-      }
-    }, {
-      "id": 137,
-      "name": "flytande honung",
-      "pivot": {
-        "recipe_id": 75,
-        "ingredient_id": 137,
-        "amount": "1 tsk"
-      }
-    }, {
-      "id": 138,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 75,
-        "ingredient_id": 138,
-        "amount": "1\/2 tsk"
-      }
-    }, {
-      "id": 139,
-      "name": "peppar",
-      "pivot": {
-        "recipe_id": 75,
-        "ingredient_id": 139,
-        "amount": "1 krm"
-      }
-    }],
-    "comments": []
-  }, {
-    "id": 76,
-    "author": "Uknown source",
-    "title": "Fri fr\u00e5n gluten och \u00e4gg.",
-    "instructure": "Blanda f\u00e4rskost, yoghurt och gr\u00e4sl\u00f6k i en bunke. Krydda med salt och peppar.\nServera g\u00e4rna \u00f6rtkr\u00e4men till Gjutj\u00e4rnsbr\u00f6d med valn\u00f6tter, eller annat br\u00f6d.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/76",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/76\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/76\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/76\/ingredients",
-    "meal": {
-      "id": 52,
-      "recipe_id": 76,
-      "name": "\u00d6rtkr\u00e4m",
-      "description": "En \u00f6rtkr\u00e4m av h\u00e4lften f\u00e4rskost, h\u00e4lften naturell yoghurt som passar till det mesta, inte minst som p\u00e5l\u00e4gg p\u00e5 ett gott br\u00f6d. H\u00e4r smaks\u00e4tts \u00f6rtkr\u00e4men med finskuren gr\u00e4sl\u00f6k, men det g\u00e5r att variera med vilka \u00f6rter man vill. Persilja, timjan eller basilika till exempel.",
-      "country": null,
-      "type": "sauce",
-      "allergic_type": "glutenFree",
-      "energy": 407,
-      "preparing_time": "UNDER 15 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_101245\/cf_259\/ortkram-717927.png"
-    },
-    "ingredients": [{
-      "id": 140,
-      "name": "f\u00e4rskost",
-      "pivot": {
-        "recipe_id": 76,
-        "ingredient_id": 140,
-        "amount": "200 g"
-      }
-    }, {
-      "id": 141,
-      "name": "naturell yoghurt (3 %)",
-      "pivot": {
-        "recipe_id": 76,
-        "ingredient_id": 141,
-        "amount": "1\/2 dl"
-      }
-    }, {
-      "id": 142,
-      "name": "finskuren gr\u00e4sl\u00f6k",
-      "pivot": {
-        "recipe_id": 76,
-        "ingredient_id": 142,
-        "amount": "2 msk"
-      }
-    }, {
-      "id": 143,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 76,
-        "ingredient_id": 143,
-        "amount": "1\/2 krm"
-      }
-    }, {
-      "id": 144,
-      "name": "peppar",
-      "pivot": {
-        "recipe_id": 76,
-        "ingredient_id": 144,
-        "amount": "1\/2 krm"
-      }
-    }],
-    "comments": []
-  }, {
-    "id": 77,
-    "author": "ICA",
-    "title": "Fri fr\u00e5n gluten men inneh\u00e5ller mj\u00f6lkprotein och \u00e4gg.",
-    "instructure": "Dela vaniljst\u00e5ngen p\u00e5 l\u00e4ngden med en liten kniv och skrapa ur fr\u00f6na. L\u00e4gg b\u00e5de st\u00e5ng och fr\u00f6n i en kastrull tillsammans med mj\u00f6lken. Koka upp och dra av fr\u00e5n v\u00e4rmen. L\u00e5t st\u00e5 och dra i ca 15 minuter och lyft sedan upp vaniljst\u00e5ngen.\n\nVispa str\u00f6socker, \u00e4ggulor och majsst\u00e4rkelse luftigt med en elvisp i en bunke. H\u00e4ll i mj\u00f6lken under fortsatt vispning.\nH\u00e4ll tillbaka blandningen i kastrullen och v\u00e4rm upp, forts\u00e4tt vispa under tiden. S\u00e5 fort vaniljkr\u00e4men b\u00f6rjar tjockna, h\u00e4ll snabbt \u00f6ver den i en kall sk\u00e5l.\nVispa ner sm\u00f6ret s\u00e5 att det sm\u00e4lter. Kyl vaniljkr\u00e4men i ett isbad eller i kylen. T\u00e4ck kr\u00e4men med plastfolie s\u00e5 att det inte bildas skinn p\u00e5 den.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/77",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/77\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/77\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/77\/ingredients",
-    "meal": {
-      "id": 53,
-      "recipe_id": 77,
-      "name": "Vaniljkr\u00e4m",
-      "description": "En \u00e4kta vaniljkr\u00e4m gjord p\u00e5 vaniljst\u00e5ng \u00e4r det som tar dina bakverk fr\u00e5n helt okej till total magi! T\u00e5rtor, bakelser, bullar, kakor eller paj \u2013 bara fantasin s\u00e4tter gr\u00e4nserna! Fr\u00e4msta sk\u00e4let till att g\u00f6ra sin egen vaniljkr\u00e4m \u00e4r att den blir s\u00e5 mycket godare \u00e4n att k\u00f6pa f\u00e4rdig.",
-      "country": null,
-      "type": "sauce",
-      "allergic_type": "glutenFree",
-      "energy": 0,
-      "preparing_time": "UNDER 30 MIN",
-      "cooking_time": null,
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_186555\/cf_259\/vaniljkram-724261.jpg"
-    },
-    "ingredients": [{
-      "id": 145,
-      "name": "vaniljst\u00e5ng",
-      "pivot": {
-        "recipe_id": 77,
-        "ingredient_id": 145,
-        "amount": "1"
-      }
-    }, {
-      "id": 146,
-      "name": "mj\u00f6lk",
-      "pivot": {
-        "recipe_id": 77,
-        "ingredient_id": 146,
-        "amount": "5 dl"
-      }
-    }, {
-      "id": 147,
-      "name": "str\u00f6socker",
-      "pivot": {
-        "recipe_id": 77,
-        "ingredient_id": 147,
-        "amount": "1 1\/2 dl"
-      }
-    }, {
-      "id": 148,
-      "name": "\u00e4ggulor",
-      "pivot": {
-        "recipe_id": 77,
-        "ingredient_id": 148,
-        "amount": "7"
-      }
-    }, {
-      "id": 149,
-      "name": "majsst\u00e4rkelse",
-      "pivot": {
-        "recipe_id": 77,
-        "ingredient_id": 149,
-        "amount": "1\/2 dl"
-      }
-    }, {
-      "id": 150,
-      "name": "rumsvarmt sm\u00f6r",
-      "pivot": {
-        "recipe_id": 77,
-        "ingredient_id": 150,
-        "amount": "25 g"
-      }
-    }],
-    "comments": []
-  }, {
-    "id": 78,
-    "author": "ICA",
-    "title": "Fri fr\u00e5n gluten och \u00e4gg.",
-    "instructure": "S\u00e4tt ugnen p\u00e5 225\u00b0C (200\u00b0C i varmluftsugn).  \nSm\u00f6r: Blanda sm\u00f6r med sardeller, vitl\u00f6k, citronskal, citronsaft och rosmarin. Smaka av med salt och peppar.  \nKyckling: Tryck in sm\u00f6ret under skinnet p\u00e5 kycklingen, framf\u00f6r allt vid br\u00f6st och l\u00e5r. Tips! Stick f\u00f6rst in fingret under skinnet och skapa en ficka. D\u00e4refter trycker du in sm\u00f6ret och f\u00f6rdelar j\u00e4mnt under skinnet. Ta lite av sm\u00f6ret och gnid runtom kycklingen och avsluta med flingsalt och svartpeppar. \nL\u00e4gg kycklingen i en form tillsammans med klyftad l\u00f6k och n\u00e5gra kvistar rosmarin. Stek i nedre delen av ugnen i ca 15 minuter. S\u00e4nk v\u00e4rmen till 175\u00b0C (150\u00b0C varmluft) och stek i ca 1 timme till eller tills kycklingen har f\u00e5tt fin f\u00e4rg och har en innertemperatur intill l\u00e5rbenet p\u00e5 82\u00b0C. \u00d6s g\u00e4rna lite sky \u00f6ver kycklingen n\u00e5gon g\u00e5ng under tillagningen. Du inte beh\u00f6ver sk\u00e4ra upp kycklingen om du inte vill, utan du kan riva k\u00f6ttet fr\u00e5n skrovet och blanda det med skyn som ligger i botten av ugnsformen. \n\nTill servering: Servera g\u00e4rna med pressad potatis och en h\u00e4rlig gr\u00f6nsallad.",
-    "rating": "No ratting yet",
-    "recipe_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/78",
-    "comments_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/78\/comments",
-    "meal_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/78\/meal",
-    "ingredients_link": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes\/78\/ingredients",
-    "meal": {
-      "id": 54,
-      "recipe_id": 78,
-      "name": "Hel kyckling med rosmarin- och citronsm\u00f6r",
-      "description": "G\u00f6r en hel kyckling i ugnen, sk\u00f6ter sig sj\u00e4lv medan du g\u00f6r annat. Som till exempel dreglar av dofterna av det dr\u00f6mmiga kryddsm\u00f6ret med sardeller, rosmarin och citron som g\u00f6r kycklingen s\u00e4llskap d\u00e4r inne. Snart \u00e4r maten klar!",
-      "country": null,
-      "type": "main_course",
-      "allergic_type": "normal",
-      "energy": 0,
-      "preparing_time": null,
-      "cooking_time": "\u00d6VER 60 MIN",
-      "image": "https:\/\/icase.azureedge.net\/imagevaultfiles\/id_190237\/cf_259\/helstekt-kyckling-med_rosmarin-och-citronsm-r-7247.jpg"
-    },
-    "ingredients": [{
-      "id": 151,
-      "name": "rumsvarmt sm\u00f6r",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 151,
-        "amount": "100 g"
-      }
-    }, {
-      "id": 152,
-      "name": "finhackade sardeller i olja",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 152,
-        "amount": "5"
-      }
-    }, {
-      "id": 153,
-      "name": "rivna vitl\u00f6ksklyftor",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 153,
-        "amount": "4"
-      }
-    }, {
-      "id": 154,
-      "name": "skalet av 1 stor citron",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 154,
-        "amount": "-"
-      }
-    }, {
-      "id": 155,
-      "name": "saften av 1\/2 citron",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 155,
-        "amount": "-"
-      }
-    }, {
-      "id": 156,
-      "name": "salt",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 156,
-        "amount": "-"
-      }
-    }, {
-      "id": 157,
-      "name": "nymalen svartpeppar",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 157,
-        "amount": "-"
-      }
-    }, {
-      "id": 158,
-      "name": "finhackad f\u00e4rsk rosmarin",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 158,
-        "amount": "2 msk"
-      }
-    }, {
-      "id": 159,
-      "name": "kyckling",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 159,
-        "amount": "1 hel"
-      }
-    }, {
-      "id": 160,
-      "name": "flingsalt",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 160,
-        "amount": "-"
-      }
-    }, {
-      "id": 161,
-      "name": "svartpeppar",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 161,
-        "amount": "-"
-      }
-    }, {
-      "id": 162,
-      "name": "gula och\/eller r\u00f6da klyftade l\u00f6kar",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 162,
-        "amount": "3"
-      }
-    }, {
-      "id": 163,
-      "name": "kvistar f\u00e4rsk rosmarin",
-      "pivot": {
-        "recipe_id": 78,
-        "ingredient_id": 163,
-        "amount": "ett par"
-      }
-    }],
-    "comments": []
+    "recipe_id": 97,
+    "name": "Citronfromage",
+    "description": "En fr\u00e4sch citronfromage passar utm\u00e4rkt som avslutning p\u00e5 en festm\u00e5ltid. Perfekt att f\u00f6rbereda dagen innan, l\u00e5ta st\u00e5 i kylen och garnera f\u00f6re servering. Ljuvligt gott!",
+    "country": "AFRICA!",
+    "type": "starter",
+    "allergic_type": "normal",
+    "energy": 921,
+    "preparing_time": "\u00d6VER 60 MIN",
+    "cooking_time": null,
+    "image": "https:\/\/cdn1.tasteline.com\/citronfromage_3-360x360.jpg"
   }],
   "links": {
-    "first": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes?page=1",
-    "last": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes?page=2",
+    "first": "http:\/\/recipe\/api\/meals?page=1",
+    "last": "http:\/\/recipe\/api\/meals?page=2",
     "prev": null,
-    "next": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes?page=2"
+    "next": "http:\/\/recipe\/api\/meals?page=2"
   },
   "meta": {
     "current_page": 1,
     "from": 1,
     "last_page": 2,
-    "path": "http:\/\/recipe-backend.ardinasiri.chas.academy\/api\/recipes",
+    "path": "http:\/\/recipe\/api\/meals",
     "per_page": 15,
     "to": 15,
-    "total": 16
+    "total": 17
   }
 }

@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
   providedIn: "root"
 })
 export class RecipeService {
-  private apiUrl: string = "http://backendrecip.ardinasiri.me/api/recipes";
+  private apiUrl: string = "http://recipe/api/recipes";
   httpOptions = {
     headers: new HttpHeaders({
       "Content-Type": "application/json"

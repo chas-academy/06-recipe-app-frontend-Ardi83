@@ -1,5 +1,5 @@
 import { Router } from "@angular/router";
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { RecipeService } from "../services/recipe.service";
 import { AuthService } from '../services/auth.service';
 
@@ -8,7 +8,7 @@ import { AuthService } from '../services/auth.service';
   templateUrl: "./recipe.component.html",
   styleUrls: ["./recipe.component.scss"]
 })
-export class RecipeComponent implements OnInit{
+export class RecipeComponent implements OnInit {
   recipes$: Recipe[];
   links: Links = {
     prev: "",
@@ -78,9 +78,22 @@ export class RecipeComponent implements OnInit{
     this.getRecipes(category);
   }
 
+  searchMeal(e) {
+    if (!e.target.value) {
+      this.getRecipes();
+      return;
+    }
+    if (e.keyCode === 8) {
+      this.getRecipes();
+      setTimeout(() => {
+        this.recipes$ = this.recipes$.filter((x: any) => x.meal.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1);
+      }, 500);
+    }
+    this.recipes$ = this.recipes$.filter((x: any) => x.meal.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1);
+  }
 
   ngOnInit() {
-    this.Auth.authstatus.subscribe( value => this.loggedIn = value);
+    this.Auth.authStatus.subscribe( value => this.loggedIn = value);
   }
 
 }

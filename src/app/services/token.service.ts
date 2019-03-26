@@ -4,49 +4,57 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TokenService {
- private iss = {
+  private iss = {
     login: 'http://recipe/api/login',
     signup: 'http://recipe/api/signup'
   };
-  constructor() { }
 
+  public user: null;
+
+  constructor() { 
+
+  }
+  
   handle(token) {
     this.set(token);
   }
-
+  
   set(token) {
     localStorage.setItem('token', token);
   }
-
+  
   get() {
     return localStorage.getItem('token')
   }
-
+  
   remove() {
     localStorage.removeItem('token')
   }
-
+  
   isValid() {
     const token = this.get();
     if (token) {
       const payload = this.payload(token);
       if (payload) {
-        return Object.values(this.iss).indexOf(payload.iss) > -1 ? true : false;
+        return (Object.values(this.iss).indexOf(payload.iss) > -1 &&
+        payload.iss === this.iss.login)
+        ? true : false;
       }
     }
     return false;
   }
-
+  
   payload(token) {
     const payload = token.split('.')[1];
     return this.decode(payload);
   }
-
+  
   decode(payload) {
     return JSON.parse(atob(payload));
   }
-
+  
   loggedIn() {
     return this.isValid();
   }
+
 }

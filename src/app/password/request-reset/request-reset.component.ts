@@ -25,12 +25,12 @@ export class RequestResetComponent implements OnInit {
     this.authJwt.sendPasswordResetLink(this.form).subscribe(
       data => this.handleResponse(data),
       error => this.Notify.error(error.error.error)
-    )
+    );
   }
 
   handleResponse(res) {
     this.Notify.success(res.data,{timeout:0});
-    this.form.email = null
+    this.form.email = null;
   }
 
 }
