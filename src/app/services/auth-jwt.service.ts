@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
   providedIn: "root"
 })
 export class AuthJwtService {
-  private logUrl = "http://recipe/api";
+  private logUrl = "http://recipe-backend.ardinasiri.chas.academy/api";
 
   constructor(private http: HttpClient) {}
 

@@ -1,3 +1,4 @@
+import { FavComponent } from './favorite/fav.component';
 import { BeforeLoginService } from './services/before-login.service';
 import { ResponseResetComponent } from "./password/response-reset/response-reset.component";
 import { RequestResetComponent } from "./password/request-reset/request-reset.component";
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: "signup", component: SignupComponent, canActivate: [BeforeLoginService] },
   { path: "profile", component: ProfileComponent, canActivate: [AfterLoginService] },
   { path: "request-password-reset", component: RequestResetComponent, canActivate: [BeforeLoginService] },
-  { path: "response-password-reset", component: ResponseResetComponent, canActivate: [BeforeLoginService] }
+  { path: "response-password-reset", component: ResponseResetComponent, canActivate: [BeforeLoginService] },
+  { path: 'myfav', component: FavComponent, canActivate: [AfterLoginService] }
 ];
 
 @NgModule({

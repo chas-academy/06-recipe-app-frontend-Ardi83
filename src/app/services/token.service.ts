@@ -5,32 +5,32 @@ import { Injectable } from '@angular/core';
 })
 export class TokenService {
   private iss = {
-    login: 'http://recipe/api/login',
-    signup: 'http://recipe/api/signup'
+    login: 'http://recipe-backend.ardinasiri.chas.academy/api/login',
+    signup: 'http://recipe-backend.ardinasiri.chas.academy/api/signup'
   };
 
   public user: null;
 
-  constructor() { 
+  constructor() {
 
   }
-  
+
   handle(token) {
     this.set(token);
   }
-  
+
   set(token) {
     localStorage.setItem('token', token);
   }
-  
+
   get() {
     return localStorage.getItem('token')
   }
-  
+
   remove() {
     localStorage.removeItem('token')
   }
-  
+
   isValid() {
     const token = this.get();
     if (token) {
@@ -43,16 +43,16 @@ export class TokenService {
     }
     return false;
   }
-  
+
   payload(token) {
     const payload = token.split('.')[1];
     return this.decode(payload);
   }
-  
+
   decode(payload) {
     return JSON.parse(atob(payload));
   }
-  
+
   loggedIn() {
     return this.isValid();
   }

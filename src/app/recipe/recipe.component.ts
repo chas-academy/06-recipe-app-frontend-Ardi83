@@ -1,3 +1,4 @@
+import { FavoriteService } from './../services/favorite.service';
 import { Router } from "@angular/router";
 import { Component, OnInit } from "@angular/core";
 import { RecipeService } from "../services/recipe.service";
@@ -17,10 +18,13 @@ export class RecipeComponent implements OnInit {
   categories = ["starter", "snack", "main_course", "dessert", "salad", "sauce"];
   public access = "Insert access password!";
 
+  public error = '';
+
   constructor(
     private recipeservice: RecipeService,
     private router: Router,
-    private Auth: AuthService
+    private Auth: AuthService,
+    private favoriteService: FavoriteService
     ) {
     this.getRecipes();
   }
@@ -84,16 +88,37 @@ export class RecipeComponent implements OnInit {
       return;
     }
     if (e.keyCode === 8) {
-      this.getRecipes();
-      setTimeout(() => {
-        this.recipes$ = this.recipes$.filter((x: any) => x.meal.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1);
-      }, 500);
+      e.target.value = '';
     }
-    this.recipes$ = this.recipes$.filter((x: any) => x.meal.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1);
+    let r: any = [];
+    let l: any = {};
+    this.recipeservice.getRecipes().subscribe((response: GetRecipes) => {
+      r = response.data;
+      l = response.links;
+
+      if (l.next) {
+        this.recipeservice.getRecipesNext(l.next).subscribe((p: GetRecipes) => {
+          p.data.forEach(element => {
+            r.push(element);
+          });
+          l = p.links;
+          this.recipes$ = r.filter(i => i.meal.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1);
+        });
+      } else {
+        this.recipes$ = r.filter(i => i.meal.name.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1);
+      }
+    });
+  }
+
+  addToFav(id) {
+    this.favoriteService.addToFave(id).subscribe(x => {
+      console.log(x);
+    }, err => {
+      alert(err.error);
+    });
   }
 
   ngOnInit() {
     this.Auth.authStatus.subscribe( value => this.loggedIn = value);
   }
-
 }

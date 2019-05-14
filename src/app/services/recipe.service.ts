@@ -7,7 +7,7 @@ import { Router } from "@angular/router";
   providedIn: "root"
 })
 export class RecipeService {
-  private apiUrl: string = "http://recipe/api/recipes";
+  private apiUrl: string = "http://recipe-backend.ardinasiri.chas.academy/api/recipes";
   httpOptions = {
     headers: new HttpHeaders({
       "Content-Type": "application/json"
@@ -15,10 +15,6 @@ export class RecipeService {
   };
 
   constructor(private httpClient: HttpClient, private router: Router) {}
-
-  getToken(): string {
-    return "asd";
-  }
 
   getRecipes(): Observable<GetRecipes> {
     return this.httpClient.get(this.apiUrl) as Observable<GetRecipes>;

@@ -27,7 +27,7 @@ export class SignupComponent implements OnInit {
     onSubmitSignup() {
     this.authJwt.signup(this.form).subscribe(
       data => this.handleResponse(data),
-      errorr => this.handleError(errorr)
+      error => this.handleError(error)
       );
   }
 
@@ -36,8 +36,8 @@ export class SignupComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
-  handleError(err) {
-    this.error = err.error.errors;
+  handleError(error) {
+    this.error = error.error.errors;
   }
 
   ngOnInit() {}

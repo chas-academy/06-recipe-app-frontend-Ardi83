@@ -26,6 +26,8 @@ import { TokenService } from './services/token.service';
 import { AuthService } from './services/auth.service';
 import { AfterLoginService } from './services/after-login.service';
 import { BeforeLoginService } from './services/before-login.service';
+import { FavoriteService } from './services/favorite.service';
+import { FavComponent } from './favorite/fav.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { BeforeLoginService } from './services/before-login.service';
     LoginComponent,
     ProfileComponent,
     RequestResetComponent,
-    ResponseResetComponent
+    ResponseResetComponent,
+    FavComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ import { BeforeLoginService } from './services/before-login.service';
   providers: [RecipeService, AuthJwtService, TokenService,
     AuthService, AfterLoginService, BeforeLoginService,
     { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
-    SnotifyService  
+    SnotifyService,
+    FavoriteService
   ],
   bootstrap: [AppComponent]
 })

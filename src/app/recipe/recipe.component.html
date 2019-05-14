@@ -10,24 +10,24 @@
 </div>
 <table class="table">
     <thead>
-        <th></th>
+        <th>Picture</th>
         <th>Author</th>
         <th>Meal</th>
         <th>Allergic type</th>
         <th>Category</th>
         <th>Rank</th>
-        <th></th>
-        <th></th>
+        <th>Edit</th>
+        <th>Favorite</th>
     </thead>
     <tbody>
       <tr *ngFor="let recipe of recipes$">
         <td *ngIf="recipe.meal.image" ><img style="cursor: pointer;" width="100px" src="{{ recipe.meal.image }}" (click)="view(recipe.id)"/></td>
-        <td>{{ recipe.author}}</td>           
-        <td>{{recipe.meal.name}}</td>                 
-        <td>{{recipe.meal.allergic_type}}</td>                 
+        <td>{{ recipe.author}}</td>
+        <td>{{recipe.meal.name}}</td>
+        <td>{{recipe.meal.allergic_type}}</td>
         <td>{{recipe.meal.type}}</td>
         <td>{{ recipe.rating }}</td>
-        <td style="display: flex">
+        <td>
           <button type="button" class="btn btn-warning" [disabled]="!loggedIn" (click)="edit(recipe.id)" >
             Edit
           </button>
@@ -35,7 +35,12 @@
             Delete
           </button>
         </td>
-      </tr>              
+        <td>
+          <button type="button" class="btn btn-success" [disabled]="!loggedIn" (click)="addToFav(recipe.id)">
+            Add
+          </button>
+        </td>
+      </tr>
     </tbody>
 </table>
 <a class="btn btn-primary" routerLink="/recipe/new" [class.disabled]="!loggedIn" >add</a>
