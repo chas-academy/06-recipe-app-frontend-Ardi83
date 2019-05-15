@@ -19,6 +19,7 @@ export class RecipeComponent implements OnInit {
   public access = "Insert access password!";
 
   public error = '';
+  public added = false;
 
   constructor(
     private recipeservice: RecipeService,
@@ -109,10 +110,9 @@ export class RecipeComponent implements OnInit {
       }
     });
   }
-
   addToFav(id) {
     this.favoriteService.addToFave(id).subscribe(x => {
-      console.log(x);
+      alert('The recipe added to your favorite list');
     }, err => {
       alert(err.error);
     });

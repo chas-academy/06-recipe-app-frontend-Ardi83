@@ -76,4 +76,8 @@ export class FavComponent implements OnInit {
       alert(err.error);
     });
   }
+
+  view(id) {
+    this.router.navigate(["recipe/view/" + id]);
+  }
 }
