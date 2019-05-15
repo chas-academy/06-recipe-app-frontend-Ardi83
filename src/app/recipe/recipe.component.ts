@@ -1,25 +1,24 @@
 import { FavoriteService } from './../services/favorite.service';
-import { Router } from "@angular/router";
-import { Component, OnInit } from "@angular/core";
-import { RecipeService } from "../services/recipe.service";
+import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../services/recipe.service';
 import { AuthService } from '../services/auth.service';
 
 @Component({
-  selector: "app-recipe",
-  templateUrl: "./recipe.component.html",
-  styleUrls: ["./recipe.component.scss"]
+  selector: 'app-recipe',
+  templateUrl: './recipe.component.html',
+  styleUrls: ['./recipe.component.scss']
 })
 export class RecipeComponent implements OnInit {
   recipes$: Recipe[];
   links: Links = {
-    prev: "",
-    next: ""
+    prev: '',
+    next: ''
   };
-  categories = ["starter", "snack", "main_course", "dessert", "salad", "sauce"];
-  public access = "Insert access password!";
+  categories = ['starter', 'snack', 'main_course', 'dessert', 'salad', 'sauce'];
+  public access = 'Insert access password!';
 
   public error = '';
-  public added = false;
 
   constructor(
     private recipeservice: RecipeService,
@@ -64,11 +63,11 @@ export class RecipeComponent implements OnInit {
   }
 
   edit(id) {
-    this.router.navigate(["recipe/new/" + id]);
+    this.router.navigate(['recipe/new/' + id]);
   }
 
   delete(id) {
-    if (confirm("Are you sure to delete recipe with id: " + id + "?")) {
+    if (confirm('Are you sure to delete recipe with id: ' + id + '?')) {
       this.recipeservice.deleteById(id).subscribe(() => {
         this.getRecipes();
       });
@@ -76,7 +75,7 @@ export class RecipeComponent implements OnInit {
   }
 
   view(id) {
-    this.router.navigate(["recipe/view/" + id]);
+    this.router.navigate(['recipe/view/' + id]);
   }
 
   filterBy(category) {
@@ -110,9 +109,9 @@ export class RecipeComponent implements OnInit {
       }
     });
   }
+
   addToFav(id) {
     this.favoriteService.addToFave(id).subscribe(x => {
-      alert('The recipe added to your favorite list');
     }, err => {
       alert(err.error);
     });

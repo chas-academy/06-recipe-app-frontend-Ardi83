@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-name',
   template: `
-    <table class="table">
+    <h1 class="text-info" *ngIf="favRecipes.length < 1">You have not any recipes in your favorite list :)</h1>
+    <table class="table" *ngIf="favRecipes.length > 0">
     <thead>
         <th>Picture</th>
         <th>Author</th>
@@ -46,8 +47,8 @@ export class FavComponent implements OnInit {
   constructor(private favoriteService: FavoriteService, private recipeService: RecipeService, private router: Router) { }
 
   ngOnInit(): void {
-    this.recipeService.getRecipes().subscribe(r => {
-      this.recipes = r.data;
+    this.recipeService.getAllRecipes().subscribe(r => {
+      this.recipes = r;
     });
     this.favoriteService.getAllFave().subscribe(x => {
       this.favs = x;
@@ -61,8 +62,8 @@ export class FavComponent implements OnInit {
   removeFromFav(id) {
     this.favRecipes = [];
     this.favoriteService.removeFromFave(id).subscribe(x => {
-      this.recipeService.getRecipes().subscribe(r => {
-        this.recipes = r.data;
+      this.recipeService.getAllRecipes().subscribe(r => {
+        this.recipes = r;
       });
       this.favoriteService.getAllFave().subscribe(x => {
         this.favs = x;
@@ -76,8 +77,7 @@ export class FavComponent implements OnInit {
       alert(err.error);
     });
   }
-
   view(id) {
-    this.router.navigate(["recipe/view/" + id]);
+    this.router.navigate(['recipe/view/' + id]);
   }
 }
