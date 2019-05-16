@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-name',
   template: `
-    <h1 class="text-info" *ngIf="favRecipes.length < 1">You have not any recipes in your favorite list :)</h1>
+    <h1 class="text-info" *ngIf="loading">Loading ...</h1>
+    <h1 class="text-info" *ngIf="favRecipes.length < 1 && !loading">You have not any recipes in your favorite list :)</h1>
     <table class="table" *ngIf="favRecipes.length > 0">
     <thead>
         <th>Picture</th>
@@ -44,8 +45,9 @@ export class FavComponent implements OnInit {
   recipes = [];
   favRecipes = [];
   error = '';
+  loading = true;
   constructor(private favoriteService: FavoriteService, private recipeService: RecipeService, private router: Router) { }
-
+  
   ngOnInit(): void {
     this.recipeService.getAllRecipes().subscribe(r => {
       this.recipes = r;
@@ -57,10 +59,14 @@ export class FavComponent implements OnInit {
           this.favRecipes.push(element);
         }
       });
+      this.loading = false;
+    }, err => {
+      this.loading = false;
     });
   }
   removeFromFav(id) {
     this.favRecipes = [];
+    this.loading = true;
     this.favoriteService.removeFromFave(id).subscribe(x => {
       this.recipeService.getAllRecipes().subscribe(r => {
         this.recipes = r;
@@ -72,7 +78,9 @@ export class FavComponent implements OnInit {
             this.favRecipes.push(element);
           }
         });
+        this.loading = false;
       });
+      this.loading = true;
     }, err => {
       alert(err.error);
     });
@@ -80,4 +88,6 @@ export class FavComponent implements OnInit {
   view(id) {
     this.router.navigate(['recipe/view/' + id]);
   }
+  
+
 }
